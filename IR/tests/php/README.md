@@ -17,7 +17,7 @@ PHP a permis de créer un grand nombre de sites web célèbres, comme Facebook, 
 - Cours PHP : http://tvaira.free.fr/web/cours-php.pdf et http://tvaira.free.fr/web/coursPHP5-OO.pdf
 - Autres : http://tvaira.free.fr/web/
 
-## Éléments de syntaxe
+## Éléments de syntaxe
 
 Le langage PHP utilise une syntaxe très proche de celle utilisée en C/C++.
 
@@ -42,7 +42,7 @@ PHP est doté d’un typage dynamique faible :
 
 Exemple d’utilisation des types en PHP :
 
-`̀``php
+```php
 <?php
 $a = 1; // un entier
 $b = 2.5; // un nombre à virgule flottante
@@ -56,7 +56,7 @@ var_dump($c); // string(5) "hello"
 // transtypage :
 $a = (int)$b; // a vaut 2
 ?>
-`̀``
+```
 
 ## Programmer en PHP sous Ubuntu
 
@@ -64,7 +64,7 @@ Lien : https://doc.ubuntu-fr.org/php
 
 Version de PHP :
 
-`̀``sh
+```sh
 $ php --version
 PHP 7.2.19-0ubuntu0.18.04.2 (cli) (built: Aug 12201919:34:28) ( NTS )
 Copyright (c) 1997-2018 The PHP Group
@@ -75,11 +75,11 @@ $ php -m
 
 $ which php
 /usr/bin/php
-`̀``
+```
 
 Un script PHP (mode CLI) :
 
-`̀``php
+```php
 #!/usr/bin/php
 <?php
 
@@ -111,7 +111,7 @@ while ($i < $nb)
     $i += 1;
 }
 ?>
-`̀``
+```
 
 > La première ligne sert à préciser le chemin de l’interpréteur précédé des caractères `̀#!`̀ (le _shebang_) qui exécutera le script. Cette ligne est inutile dans le cas d’une programmation web.
 
@@ -119,17 +119,17 @@ Il existe plusieurs manières d’exécuter un script PHP de façon locale :
 
 - le rendre exécutable :
 
-`̀``sh
+```sh
 $ chmod +x helloworld.php
 
 $ ./helloworld.php
-`̀``
+```
 
 - utiliser l’interpréteur PHP :
 
-`̀``sh
+```sh
 $ php helloworld.php
-`̀``
+```
 
 ## Tests
 
@@ -141,14 +141,14 @@ Ce dossier contient quelques programmes d'exemples utiles pour la réalisation d
 
 Le fichier `salles.db` est une base de données SQLite :
 
-`̀``sh
+```sh
 $ file salles.db
 salles.db: SQLite 3.x database, last written using SQLite version 3031001
-`̀``
+```
 
 Structure et contenu en SQL :
 
-`̀``sql
+```sql
 CREATE TABLE salles (
     "idSalle" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL,
     "nom" VARCHAR(255) NOT NULL UNIQUE,
@@ -162,5 +162,5 @@ INSERT INTO salles (idSalle, nom, description, ip, port, etat) VALUES
 (1, 'B20', 'salle BTS SN', '192.168.52.30', 5000, 1),
 (2, 'B22', 'salle BTS SN', '192.168.52.31', 5000, 1),
 (3, 'C12', 'salle', '192.168.52.32', 5000, 1);
-`̀``
+```
 
