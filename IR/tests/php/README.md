@@ -177,6 +177,12 @@ L’intégralité de la base de données (déclarations, tables, index et donné
 
 > Contrairement aux serveurs de bases de données traditionnels, comme MySQL ou PostgreSQL, sa particularité est de ne pas reproduire le schéma habituel client-serveur mais d’être directement intégrée aux programmes. SQLite est le moteur de base de données le plus distribué au monde, grâce à son utilisation dans de nombreux logiciels grand public comme Firefox, Skype, Google Gears, dans certains produits d’Apple, d’Adobe et de McAfee et dans les bibliothèques standards de nombreux langages comme PHP ou Python. De par son extrême légèreté (moins de 300 Kio), SQLite est également très populaire sur les systèmes embarqués, notamment sur la plupart des smartphones modernes : l’iPhone ainsi que les systèmes d’exploitation mobiles Symbian et Android l’utilisent comme base de données embarquée.
 
+Pré-requis :
+
+```sh
+$ sudo apt install php-sqlite3
+```
+
 Exemple de base de données SQLite :
 
 ```sh
@@ -204,26 +210,28 @@ INSERT INTO salles (idSalle, nom, description, ip, port, etat) VALUES
 
 ### MySQL
 
-Une des bases de données les plus utilisées avec PHP est sans aucun doute : MySQL, un SGDBR (Système de Gestion de Base de Données Relationnelle) GPL implémentant le langage de requête SQL (_Structured Query Language_).
+MySQL est un SGDBR (Système de Gestion de Base de Données Relationnelle) GPL implémentant le langage de requête SQL (_Structured Query Language_).
+
+> MariaDB est un système de gestion de base de données édité sous licence GPL. Il s'agit d'un _fork_ communautaire de MySQL. Michael Widenius, fondateur de MySQL, a lancé le projet MariaDB, dans une démarche visant à remplacer MySQL tout en assurant l’interopérabilité.
+
+Avec MySQL, vous pouvez créer plusieurs bases de données sur un serveur. Une base est composée de tables contenant des enregistrements.
 
 > Il existe un outil libre et gratuit développé en PHP par la communauté des programmeurs libres : phpMyAdmin, qui permet l'administration aisée des bases de données MySQL avec PHP.
 
-Avec MySQL vous pouvez créer plusieurs bases de données sur un serveur. Une base est composée de tables contenant des enregistrements.
-
-PHP offre 3 APIs différentes pour se connecter à MySQL : les extensions mysql (obsolète depuis PHP 5.5), mysqli et PDO.
+PHP offre 3 APIs différentes pour se connecter à MySQL : les extensions `mysql` (obsolète depuis PHP 5.5), `mysqli` et `PDO`.
 
 > Une API (_Application Programming Interface_) est une interface de programmation d'application qui définit les classes, méthodes, fonctions et variables dont une application va faire usage pour exécuter différentes tâches.
 
 L'extension `mysqli` fournit une interface de fonctions et aussi orientée objet.
 
-PHP fournit un grand choix de fonctions permettant de manipuler une base de données MySQL. Toutefois, parmi celles-ci quatre fonctions sont essentielles :
+Elle fournit un grand choix de fonctions permettant de manipuler une base de données MySQL. Toutefois, parmi celles-ci quatre fonctions sont essentielles :
 
 - La fonction de connexion au serveur (`mysqli_connect` ou `mysqli_real_connect`)
 - La fonction de choix de la base de données (`mysqli_select_db`)
 - La fonction de requête (`mysqli_query`)
 - La fonction de déconnexion (`mysqli_close`)
 
-L’exécution d’une requête `SELECT` avec `mysqli_query()` retournera retournera un objet résultat de type `mysqli_result` (ou TRUE pour les autres types de requêtes).
+L’exécution d’une requête `SELECT` avec `mysqli_query()` retournera retournera un objet résultat de type `mysqli_result` (ou `TRUE` pour les autres types de requêtes).
 
 Les fonctions de traitements de résultat d’une requête sont au choix :
 
@@ -260,25 +268,27 @@ $ sudo systemctl start mysql.service
 # Redémarrage du serveur MySQL :
 $ sudo systemctl restart mysql.service
 
-# Arrêt du serveur MySQL :
-$ sudo systemctl stop mysql.service
-
 # Accès à la console mysql :
-$ mysql -uroot -ppassword -hlocalhost
+$ sudo mysql -uroot -ppassword -hlocalhost
 mysql>
 
 # Liste les bases de données :
 mysql> show databases;
 
 # Sélection d'une base de données :
-mysql> use maBase;
+mysql> use uneBase;
 
 # Liste les tables d’une base de données :
 mysql> show tables;
 
 # Sélection des données d’une table :
-mysql> select * from mesures;
+mysql> select * from uneTable;
 
+# Sortie :
+mysql> exit
+
+# Arrêt du serveur MySQL :
+$ sudo systemctl stop mysql.service
 ...
 ```
 
@@ -286,14 +296,17 @@ Lien : https://doc.ubuntu-fr.org/mysql
 
 Pour installer une base de données, il faut :
 
-- créer la base de données (`CREATE DATABASE maBase`)
-- créer les tables (`CREATE TABLE mesures` ... etc ...)
-- insérer des données dans les tables (`INSERT INTO mesures` ... etc ...)
+- créer la base de données (`CREATE DATABASE uneBase;`)
+- créer les tables (`CREATE TABLE uneTable ...` etc ...)
+- insérer des données dans les tables (`INSERT INTO uneTable` ... etc ...)
+- éventuellement créer un utilisateur pour accéder à cette base de données (`CREATE USER unUtilisateur ...` et `GRANT ...`)
 
 L’ensemble de ces commandes peut être sauvegardé dans un fichier `.sql`.
 
+Puis :
+
 ```sh
-$ mysql -uroot -ppassword -hlocalhost < maBase.sql
+$ sudo mysql -uroot -ppassword -hlocalhost < uneBase.sql
 ```
 
 Structure et contenu en SQL d'une base de données `salles` :
@@ -324,6 +337,23 @@ CREATE TABLE IF NOT EXISTS `salles` (
 INSERT INTO `salles` (`idSalle`, `nom`, `description`, `ip`, `port`, `etat`) VALUES
 (1, 'B20', 'salle BTS SN', '192.168.52.30', 5000, 1),
 (2, 'B22', 'salle BTS SN', '192.168.52.31', 5000, 1);
+```
+
+On peut créer un utilisateur pour cette base de données :
+
+```
+mysql> USE mysql;
+mysql> SELECT Host, User FROM user;
+
+mysql> CREATE USER 'test'@'%' IDENTIFIED BY 'password';
+mysql> GRANT ALL PRIVILEGES ON `salles`.* TO 'test'@'%';
+mysql> FLUSH PRIVILEGES;
+```
+
+Pré-requis :
+
+```sh
+$ sudo apt install php-mysql
 ```
 
 Voir aussi :
