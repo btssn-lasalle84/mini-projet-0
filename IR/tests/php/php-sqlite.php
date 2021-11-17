@@ -4,6 +4,7 @@
 // Test de base de données SQLite3
 // sous GNU/Linux
 // Pré-requis : sudo apt install php-sqlite3
+// Documentation : https://www.php.net/manual/fr/book.sqlite3.php
 $nomBDD = "salles.db";
 $salles = array();
 
