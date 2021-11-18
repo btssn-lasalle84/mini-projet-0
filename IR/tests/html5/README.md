@@ -3,7 +3,7 @@
 - [HTML5](#html5)
   - [Présentation](#présentation)
   - [Un peu d'histoire](#un-peu-dhistoire)
-    - [Notions de base](#notions-de-base)
+  - [Notions de base](#notions-de-base)
     - [Version d'un document HTML](#version-dun-document-html)
     - [DTD](#dtd)
     - [Encodage](#encodage)
@@ -13,14 +13,9 @@
     - [L’en-tête du document](#len-tête-du-document)
     - [Le corps du document](#le-corps-du-document)
     - [Exemple](#exemple)
-    - [Outils de validation](#outils-de-validation)
+  - [Outils de validation](#outils-de-validation)
+  - [Viewport et Responsive Web Design](#viewport-et-responsive-web-design)
   - [Conclusion](#conclusion)
-  - [Notions de base](#notions-de-base-1)
-    - [Conteneur](#conteneur)
-    - [La grille](#la-grille)
-    - [Composants](#composants)
-  - [Documentation](#documentation)
-  - [Tests](#tests)
 
 ## Présentation
 
@@ -52,7 +47,7 @@ Le _World Wide Web_ est basé sur trois inventions, le protocole de communicatio
 
 La spécification HTML5 a été finalisé en 2014.
 
-### Notions de base
+## Notions de base
 
 ### Version d'un document HTML
 
@@ -234,7 +229,7 @@ Le W3C recommande aux auteurs et aux développeurs de séparer la structure et l
 </html>
 ```
 
-### Outils de validation
+## Outils de validation
 
 Lien : http://www.w3.org/QA/Tools/#validators et http://validator.w3.org/checklink
 
@@ -242,6 +237,29 @@ Lien : http://www.w3.org/QA/Tools/#validators et http://validator.w3.org/checkli
 - CSS : http://jigsaw.w3.org/css-validator/
 - Correction, conversion de code : http://www.w3.org/People/Raggett/tidy/
 
+## Viewport et Responsive Web Design
+
+Le _Viewport_ désigne la surface de la fenêtre du navigateur. Cependant, la notion de _viewport_ sur un appareil mobile est différente de celle sur un écran d’ordinateur : sur mobile, le navigateur ne dispose pas de « fenêtre » réelle, ni de barres de défilement car tout est prévu pour naviguer de manière tactile.
+
+La surface physique correspond au nombre physique de pixels qui composent la matrice de l’écran, telle que le constructeur le décrit dans les caractéristiques ( résolution ou plutôt la définition).
+
+Il existe aussi la surface utilisable (en "pixels CSS"), également appelée _device-width_, qui correspond au nombre de pixels virtuels que le terminal pense avoir et sur lequel il fonde son affichage.
+
+> La surface utilisable ne correspond pas toujours à la surface physique, notamment pour les mobiles dits "retina" ou haute définition. Un "pixel CSS" n’est donc pas égal à un pixel physique.
+
+Liens : https://www.mydevice.io/ ou http://screensiz.es
+
+Par défaut la taille du _viewport_ d’un terminal mobile ne correspond ni à la taille de son écran réelle ni à celle en "pixels CSS". Elle est généralement supérieure à la surface physique, afin de pouvoir y affecter un niveau de (dé)zoom.
+
+> La valeur initiale du _viewport_ ne dépend pas du terminal mais du navigateur mobile (et peut parfois même être modifiable par l’utilisateur dans ses réglages).
+
+Pour s’affranchir de ce zoom, il est possible de modifier et d’imposer la taille de la surface du _viewport_ d’un périphérique mobile à l’aide d’un élément `<meta>`.
+
+Les différentes valeurs de cet élément `meta` et de son attribut `content` offrent la possibilité de fixer la largeur de _viewport_ à la valeur souhaitée, voire de l’adapter automatiquement à la valeur de _device-width_ du terminal.
+
+`<meta name="viewport" content="width=device-width, initial-scale=1.0">`
+
+_Responsive Web Design_ (conception de sites web adaptatifs) est une conception web qui vise, grâce à différents principes et techniques, à offrir une consultation adaptée sur des écrans de tailles très différentes.
 ## Conclusion
 
 Pour être de qualité, un site doit être à la fois :
@@ -256,164 +274,4 @@ Les bonnes pratiques web :
 - Responsive web design ?
 
 Lien : https://checklists.opquast.com/fr/
-
-Exemple pour la version 5 :
-
-```html
-<!doctype html>
-<html lang="fr">
-  <head>
-    <!-- balises meta requises -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-
-    <!-- balise titre requise -->
-    <title>Hello, world!</title>
-  </head>
-  <body>
-    <h1>Hello, world!</h1>
-
-    <!-- TODO : en construction -->
-
-    <!-- Option 1 : Bootstrap Bundle with Popper -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
-
-    <!-- Option 2 : Separate Popper and Bootstrap JS -->
-    <!--
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
-    -->
-  </body>
-</html>
-```
-
-Remarque : Popper est utilisé pour les listes déroulantes pour l'affichage et le positionnement, les infobulles, popovers pour l'affichage et le positionnement.
-
-## Notions de base
-
-### Conteneur
-
-Le conteneur est l’élément de base qui possède un contenu (généralement des éléments `div`). Le conteneur est utilisé avec le système de grille. Il dispose de deux types de largeur : taille fixe, adaptée à la taille du terminal, (`class="container"`) ou fluide, 100% de la largeur disponible, (`class="container-fluid"`).
-
-Lien : https://getbootstrap.com/docs/5.1/layout/containers/
-
-### La grille
-
-La grille permet de gérer la largeur des blocs de contenu pour une page.
-
-Bootstrap gère une grille de 12 colonnes. La gouttière est l’espace qui sépare deux colonnes. Il peut être supprimé avec `no-gutters`.
-
-Dans une grille, les lignes (`row`) servent de conteneurs (flexibles) aux colonnes (`col` ou `col-n`, _n_ précisant le nombre de colonnes).
-
-Si on ne précise pas explicitement le nombre de colonnes alors l’espace dans la ligne sera distribué équitablement entre chacune des colonnes créées.
-
-Le système de grille de Bootstrap peut s'adapter à la taille du terminal avec ces six points d'arrêt par défaut :
-
-- Très petit (préfixe `xs`) < 576 pixels
-- Petit (préfixe `sm`) >= 576 pixels
-- Moyen (préfixe `md`) >= 768 pixels
-- Grand (préfixe `lg`) >= 992 pixels
-- Très grand (préfixe `xl`) >= 1200 pixels
-- Extra extra large (préfixe `xxl`) >= 1400 pixels
-
-Lien : https://getbootstrap.com/docs/5.1/layout/grid/
-
-Par défaut, les colonnes vont occuper toute la hauteur d’une ligne. On peut modifier l'alignement avec les classes `class="align-items-x"` pour toutes les colonnes d'une ligne ou `class="align-self-x"` pour aligner des colonnes individuellement. `x` précise le type d'alignement avec les valeurs suivantes : `start` en début (en haut), `center` au centre ou `end` en fin (en bas) de la ligne. Il existe aussi les classe classes `justify-content-x` pour un alignement horizontal des colonnes dans la ligne.
-
-Pour forcer le renvoi de colonnes à la ligne, on insère généralement un élement `div` avec une largeur de 100% avec `class="w-100"`.
-
-Lien : https://getbootstrap.com/docs/5.1/layout/columns/
-
-Il est possible d'imbriquer des lignes dans des colonnes pour créer des grilles complexes.
-
-### Composants
-
-Bootstrap fournit une feuille de style CSS qui contient des définitions de base pour tous les composants HTML, ce qui permet de disposer d'une apparence uniforme pour les textes, tableaux et les éléments de formulaires.
-
-Le _framework_ fournit également nombre d'éléments graphiques au format standardisé : boutons, libellés, icônes, miniatures, barres de progression ...
-
-Lien : https://getbootstrap.com/docs/5.1/components/
-
-## Documentation
-
-Lien : https://getbootstrap.com/docs/
-
-## Tests
-
-Il existe de nombreux sites qui fournissent un éditeur en ligne :
-
-- https://www.codeply.com/
-- https://www.codeply.com/
-- https://onecompiler.com/bootstrap
-- ...
-
-Exemple Bootstrap version 4 :
-
-```html
-<h1>Exemples Bootstrap</h1>
-
-<h2>Quelques composants</h2>
-<!-- Quelques composants ... -->
-<div class="container">
-    <p>Un paragraphe (sans lead)</p>
-    <p class="lead">Un paragraphe (avec lead)</p>
-    <div class="alert alert-primary" role="alert">Une alerte avec <a href="#" class="alert-link">un lien</a>.</div>
-    <button type="button" class="btn btn-secondary mb-2">Un bouton</button>
-    <a class="btn btn-primary btn-lg" href="#" role="button">Un autre bouton</a>
-    <div class="jumbotron">
-        <h1 class="display-3">Un titre</h1>
-        <p class="lead">Bla bla bla...</p>
-        <hr class="my-4">
-        <p>Bla bla bla...</p>
-        <button type="button" class="btn btn-primary mb-5">Messages<span class="badge badge-light">42</span></button>
-    </div>
-</div>
-
-<!-- Les classes bg-xxx ajoutent un fond de couleur aux éléments -->
-
-<h2>Fluid or not fluid</h2>
-<!-- Fluid or not fluid -->
-<div class="container bg-info">
-    Conteneur responsive de taille fixe (dépend de la taille du terminal)
-</div>
-
-<div class="container-fluid bg-success">
-    Conteneur responsive fluide (toujours 100% de l'espace disponible)
-</div>
-
-<h2>Une simple grille</h2>
-<!-- Une simple grille -->
-<div class="container">
-    <div class="row">
-        <div class="col bg-info">Colonne 1</div>
-        <div class="col bg-warning">Colonne 2</div>
-        <div class="col bg-success">Colonne 3</div>
-    </div>
-</div>
-
-<h2>Grille avec des colonnes de tailles différentes</h2>
-<!-- Grille avec des colonnes de tailles différentes -->
-<div class="container">
-    <div class="row">
-        <div class="col-2 bg-info">col-2</div>
-        <div class="col-4 bg-warning">col-4</div>
-        <div class="col-6 bg-success">col-6</div>
-    </div>
-</div>
-
-<h2>Grille responsive (tablette/mobile)</h2>
-<!-- Grille responsive (tablette/mobile) -->
-<div class="container">
-    <div class="row">
-        <div class="col-2 col-md-2 bg-info">col-2</div>
-        <div class="col-4 col-md-4 bg-warning">col-4</div>
-        <div class="col-6 col-md-6 bg-success">col-6</div>
-    </div>
-</div>
-```
-
-Pour tester le _responsive_, il suffit de modifier la taille du terminal (cf. points d'arrêt).
 
