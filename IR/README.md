@@ -25,6 +25,9 @@ Le dossier `tests` contient des programmes d'exemples utiles pour la réalisatio
 - `bootstrap` :
   - `test-hello-world.html` : permet de tester l'installation du _framework_
   - `test-grille.html` : met en oeuvre le système de grille
+- `html5` :
+  - `test-hello-world.html` : met en oeuvre les balises HTML5 de base
+
 
 ## Ressources
 
