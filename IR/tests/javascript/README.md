@@ -3,12 +3,16 @@
 - [JavaScript](#javascript)
   - [Présentation](#présentation)
   - [Un peu d'histoire](#un-peu-dhistoire)
+  - [Documentations](#documentations)
   - [Éléments de syntaxe](#éléments-de-syntaxe)
   - [Typage](#typage)
-  - [XMLHttpRequest](#xmlhttprequest)
-  - [Ajax](#ajax)
-  - [JSON](#json)
-  - [jQuery](#jquery)
+  - [Bac à sable](#bac-à-sable)
+  - [Autres](#autres)
+    - [XMLHttpRequest](#xmlhttprequest)
+    - [Ajax](#ajax)
+    - [JSON](#json)
+    - [jQuery](#jquery)
+    - [Divers](#divers)
 
 ## Présentation
 
@@ -46,6 +50,14 @@ Du code JavaScript intégré directement dans une page web :
 JavaScript a été créé en 1995 par Brendan Eich.
 
 Il a été standardisé sous le nom d'ECMAScript en juin 1997 par Ecma International dans le standard ECMA-262. JavaScript est une implémentation d'ECMAScript, celle mise en œuvre par la fondation Mozilla.
+
+## Documentations
+
+Liens :
+
+- https://developer.mozilla.org/fr/docs/Web/JavaScript
+- https://jquery.com/ et surtout https://api.jquery.com/
+- https://jquerymobile.com/ et surtout https://api.jquerymobile.com/
 
 ## Éléments de syntaxe
 
@@ -91,13 +103,39 @@ console.log(typeof y);
 console.log(y); // NaN (Not a Number)
 ```
 
-## XMLHttpRequest
+## Bac à sable
+
+Il est souvent nécessaire de passer par le "bac à sable".
+
+> En informatique, le bac à sable (_sandbox_) est une zone d'essai permettant d'exécuter des programmes en phase de test ou dans lesquels la confiance est incertaine. C'est notamment très utilisé en sécurité informatique pour sa notion d'isolation.
+
+On peut par exemple utiliser JSFiddle (https://jsfiddle.net/) pour avoir un espace d'apprentissage séparé.
+
+JSFiddle est un service IDE en ligne pour tester du code HTML, CSS et JavaScript. Il permet en plus d'échanger des exemples.
+
+Dans JSFiddle, il y a 4 zones dont 3 éditables :
+
+- HTML : le code HTML mais seulement à partir de la balise <body> (non incluse)
+- CSS : le code CSS directement
+- JavaScript : le code JavaScript en pouvant choisir différents frameworks : JavaScript + jQuery 1.9.1 (la version la plus proche du projet).
+- Navigateur : pour l’affichage et une console pour les logs.
+
+On peut ajouter des ressources (des liens vers des APIs) dans le panneau de gauche.
+
+Exemples :
+
+- Notion de fonction → https://jsfiddle.net/tvaira/3uqn6hev/4/
+- Notion de classe/objet → https://jsfiddle.net/tvaira/w1ubdc0j/14/
+
+## Autres
+
+### XMLHttpRequest
 
 XMLHttpRequest est un objet ActiveX ou Javascript qui permet d’obtenir des données au format XML, mais aussi HTML, ou encore texte simple à l’aide de requêtes HTTP.
 
 L’avantage principal est dans le côté **asynchrone**. La page entière ne doit plus être rechargée en totalité lorsqu’une partie doit changer ce qui entraîne un gain de temps et une meilleure interaction avec le serveur et donc le client.
 
-## Ajax
+### Ajax
 
 AJAX est un acronyme signifiant _Asynchronous JavaScript and XML_ et désignant une solution informatique libre pour le développement d’applications Web.
 
@@ -109,7 +147,7 @@ AJAX n’est pas une technologie en elle-même, mais un terme qui évoque l’ut
 - l’objet XMLHttpRequest pour échanger et manipuler les données de manière asynchrone avec le serveur Web.
 - XML/JSON pour le format des données informatives et visuelles
 
-## JSON
+### JSON
 
 JSON (_JavaScript Object Notation_) est un format de données textuelles dérivé de la notation des objets du langage JavaScript.
 
@@ -139,7 +177,7 @@ Exemple JSON:
 }
 ```
 
-## jQuery
+### jQuery
 
 jQuery est une bibliothèque JavaScript libre et multiplateforme créée pour faciliter l’écriture de scripts côté client dans le code HTML des pages web.
 
@@ -205,8 +243,7 @@ $('#exemple').show();
 
 // exécuter un code lorsqu'on clique sur la balise <p id='exemple'> :
 $("#exemple").click(function() {
-
-// Le code à exécuter ...
+  // Le code à exécuter ...
 });
 
 // modifier les attributs d'une balise <p class='paragraphe'> :
@@ -218,9 +255,17 @@ var lien = $('a').attr('href');
 alert(lien);
 ```
 
+### Divers
+
 **jQuery UI** est une collection de widgets, effets visuels et thèmes implémentés avec jQuery, des feuilles de style en cascade, et du HTML. jQuery UI permet le glisser-déposer (drag & drop), le redimensionnement, la sélection, et le classement (tri).
 
 **DataTables** est un _plugin_ jQuery open-source permettant de dynamiser un tableau HTML. Cette bibliothèque écrite en Javascript offre un grand nombre de configurations pour améliorer l’ergonomie des grilles de données, surtout lorsqu’elles ont des proportions imposantes.
 
 **JQuery Mobile** est un _framework_ d’interface optimisé pour les appareils mobiles tactiles. Son objectif est de permettre de rapidement développer des applications mobiles ou des applications web monopage en réponse à la grande diversité des Smartphones et tablettes sur le marché. Il est développé par l’équipe du projet JQuery. Il s’appuie sur l’utilisation des technologies du web : HTML5, CSS3, DOM, Javascript, Ajax.
+
+Exemples :
+
+- Test jQuery Mobile → https://jsfiddle.net/tvaira/e67ho3jb/29/
+- TP jQuery Mobile - Séquence 2 : navigation → https://jsfiddle.net/tvaira/m3ev4r0x/9/
+- Événement pagecontainerbeforeshow → https://jsfiddle.net/tvaira/s4fp8q06/30/
 
