@@ -16,18 +16,22 @@
 
 ## Tests
 
-Le dossier `tests` contient des programmes d'exemples utiles pour la réalisation du mini-projet :
+Le dossier `tests` contient des programmes d'exemples utiles pour la réalisation de la partie Web (HTML/CSS/JS/PHP) du mini-projet :
 
+- `html5` :
+  - `test-hello-world.html` : met en oeuvre les balises HTML5 de base
+- `bootstrap` :
+  - `test-hello-world.html` : permet de tester l'installation du _framework_
+  - `test-grille.html` : met en oeuvre le système de grille
+- `javascript` :
+  - `test-hello-world-1.html` : met en oeuvre du code javascript intégré à une page web
+  - `test-hello-world-2.html` : met en oeuvre du code javascript externe à une page web
+  - `test-plotly.html` : montre l'affichage d'un graphique à partir d'un bibliothèque JavaScript
 - `php` :
   - `php-version.php` : permet de tester la présence de l'interpréteur PHP en affichant sa version
   - `php-portserie.php` : réalise un test de communication série avec un Arduino sous GNU/Linux
   - `php-sqlite.php` : met en oeuvre la base de données SQLite
   - `php-mysql.php` : met en oeuvre la base de données MySQL
-- `bootstrap` :
-  - `test-hello-world.html` : permet de tester l'installation du _framework_
-  - `test-grille.html` : met en oeuvre le système de grille
-- `html5` :
-  - `test-hello-world.html` : met en oeuvre les balises HTML5 de base
 
 ## Bac à sable et développement en ligne
 
@@ -50,6 +54,8 @@ Quelques sites :
 - Gitpod : https://www.gitpod.io/
 - Codeanywhere (Cloud IDE) : https://codeanywhere.com/
 - Arduino : https://codecast.france-ioi.org/v4/
+
+Pour les tests en local côté client, il faut utiliser les **outils de développement** fournis par les navigateurs Chrome et Firefox.
 
 ## Ressources
 
