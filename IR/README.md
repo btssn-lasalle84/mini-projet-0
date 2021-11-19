@@ -2,6 +2,7 @@
 
 - [Partie IR](#partie-ir)
   - [Présentation](#présentation)
+  - [Objectifs](#objectifs)
   - [Partie Web](#partie-web)
   - [Partie Base de données](#partie-base-de-données)
   - [Tests](#tests)
@@ -10,13 +11,79 @@
 
 ## Présentation
 
+Il s'agit de présenter les objectifs, contraintes et exigences de l'application réalisée par un (ou plusieurs) étudiants IR.
+
+## Objectifs
+
+Il s'agit de réaliser une application logicielle web afin d'interagir avec un système numérique réalisé conjointement par des étudiants IR et EC.
+
+Les fonctionnalités demandées sont :
+
+- communiquer via une liaison série avec un système embarqué réalisé par l'étudiant EC afin de :
+  - récupérer des données en provenance du module électronique
+  - envoyer des commandes et/ou paramètres de configuration au module électronique
+- produire une IHM web afin :
+  - d'afficher des données en provenance du module électronique
+  - de commander et/ou paramétrer le module électronique
+- stocker des données et/ou des paramètres de configuration (base de données et/ou fichiers)
+- éventuellement d'exporter des données au format CSV et/ou JSON
+
 ## Partie Web
+
+Le logiciel sera réalisé à partir des langages utilisés habituellement pour une application web :
+
+- HTML5
+- CSS
+- JavaScript
+- PHP
+
+L'utilisation de _framework_ est recommandée (Bootstrap, jQuery, ...). Les choix doivent être validés par l'équipe enseignante.
+
+L'application web sera hébergée sur un serveur Apache. Le poste serveur pourra être un PC (Linux ou Windows) ou un Raspberry Pi.
+
+Arborescence de l'application web `xxx` :
+
+```
+www
+└── xxx
+    ├── include : contient les scripts PHP (inaccessibles à partir d'une URL)
+    ├── css : contient le(s) feuille(s) de style
+    ├── js : contient le(s) scripts JavaScript
+    ├── sql : contient le(s) scripts SQL pour initialiser une base de données
+    └── images : contient le(s) images
+```
+
+Extensions recommandées pour les fichiers :
+
+- `.html` pour les pages web
+- `.php` pour les scripts PHP accessibles à partir d'une URL
+- `.inc.php` pour les fichiers PHP contenant des fonctions et/ou des données de configuration (inaccessibles à partir d'une URL)
+- `.class.php` pour les scripts PHP contenant des classes (non demandé)
+- `.css` pour les feuilles de style
+- `.js` pour les scripts JavaScript
+- `.md` pour les fichiers de documentation au format Markdown
+- `.json` pour les fichiers JSON
+
+Exigences :
+
+- respect des normes et standard (notamment W3C)
+- responsive web design (rendu pour PC, tablette et smartphone)
 
 ## Partie Base de données
 
+Le choix de la base de données relationnelles se fera entre SQLite et MySQL (ou MariaDB). Il doit être validé par l'équipe enseignante.
+
+L’étudiant devra fournir :
+
+- un schéma relationnel de la base de données
+- deux fichiers SQL permettant de créer et d'initialiser la base de données :
+  - un fichier `.sql` de définition des données (LDD) : `ALTER`, `CREATE`, `DROP` ;
+  - un fichier `.sql` de manipulation de données (LMD) : `INSERT` ;
+
+
 ## Tests
 
-Le dossier `tests` contient des programmes d'exemples utiles pour la réalisation de la partie Web (HTML/CSS/JS/PHP) du mini-projet :
+Le dossier `tests` fournit des ressources et contient des programmes d'exemples utiles pour la réalisation de la partie Web (HTML/CSS/JS/PHP/SQL) du mini-projet :
 
 - `html5` :
   - `test-hello-world.html` : met en oeuvre les balises HTML5 de base
