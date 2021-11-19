@@ -272,11 +272,19 @@ alert(lien);
 
 ### Divers
 
+Il existe de très très nombreuses bibliothèques JavaScript.
+
+En voici quelques unes :
+
 **jQuery UI** est une collection de widgets, effets visuels et thèmes implémentés avec jQuery, des feuilles de style en cascade, et du HTML. jQuery UI permet le glisser-déposer (drag & drop), le redimensionnement, la sélection, et le classement (tri).
 
 **DataTables** est un _plugin_ jQuery open-source permettant de dynamiser un tableau HTML. Cette bibliothèque écrite en Javascript offre un grand nombre de configurations pour améliorer l’ergonomie des grilles de données, surtout lorsqu’elles ont des proportions imposantes.
 
 **Plotly** est une bibliothèque graphique JavaScript permettant de créer notamment des diagrammes graphiques. Lien : https://plotly.com/javascript/
+
+**Industrial.js** fournit quelques _widgets_ techniques. Lien : http://brennana.github.io/industrial-js/
+
+**Canvas Gauge** fournit des _widgets_ jauges. Lien : https://canvas-gauges.com/documentation/examples/ Voir aussi : (https://bernii.github.io/gauge.js/)
 
 **JQuery Mobile** est un _framework_ d’interface optimisé pour les appareils mobiles tactiles. Son objectif est de permettre de rapidement développer des applications mobiles ou des applications web monopage en réponse à la grande diversité des Smartphones et tablettes sur le marché. Il est développé par l’équipe du projet JQuery. Il s’appuie sur l’utilisation des technologies du web : HTML5, CSS3, DOM, Javascript, Ajax.
 
