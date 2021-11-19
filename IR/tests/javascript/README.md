@@ -45,6 +45,21 @@ Du code JavaScript intégré directement dans une page web :
 </html>
 ```
 
+Le code JavaScript peut être placé dans un (ou plusieurs) fichiers séparés (extension par défaut `.js`) :
+
+```html
+<!DOCTYPE html>
+<html dir="ltr" lang="fr">
+  <head>
+    <meta charset="utf8" />
+    <title>Du code JavaScript externe</title>
+    <script src="test.js"></script>
+  </head>
+  <body>
+  </body>
+</html>
+```
+
 ## Un peu d'histoire
 
 JavaScript a été créé en 1995 par Brendan Eich.
@@ -260,6 +275,8 @@ alert(lien);
 **jQuery UI** est une collection de widgets, effets visuels et thèmes implémentés avec jQuery, des feuilles de style en cascade, et du HTML. jQuery UI permet le glisser-déposer (drag & drop), le redimensionnement, la sélection, et le classement (tri).
 
 **DataTables** est un _plugin_ jQuery open-source permettant de dynamiser un tableau HTML. Cette bibliothèque écrite en Javascript offre un grand nombre de configurations pour améliorer l’ergonomie des grilles de données, surtout lorsqu’elles ont des proportions imposantes.
+
+**Plotly** est une bibliothèque graphique JavaScript permettant de créer notamment des diagrammes graphiques. Lien : https://plotly.com/javascript/
 
 **JQuery Mobile** est un _framework_ d’interface optimisé pour les appareils mobiles tactiles. Son objectif est de permettre de rapidement développer des applications mobiles ou des applications web monopage en réponse à la grande diversité des Smartphones et tablettes sur le marché. Il est développé par l’équipe du projet JQuery. Il s’appuie sur l’utilisation des technologies du web : HTML5, CSS3, DOM, Javascript, Ajax.
 
