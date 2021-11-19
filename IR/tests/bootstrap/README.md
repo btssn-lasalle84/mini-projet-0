@@ -9,6 +9,7 @@
     - [Composants](#composants)
   - [Documentation](#documentation)
   - [Tests](#tests)
+  - [Voir aussi](#voir-aussi)
 
 ## Présentation
 
@@ -197,4 +198,8 @@ Exemple Bootstrap version 4 :
 ```
 
 Pour tester le _responsive_, il suffit de modifier la taille du terminal (cf. points d'arrêt).
+
+## Voir aussi
+
+- Material Design pour Bootstrap : https://mdbootstrap.com/
 
