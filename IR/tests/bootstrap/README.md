@@ -128,7 +128,6 @@ Lien : https://getbootstrap.com/docs/
 Il existe de nombreux sites qui fournissent un éditeur en ligne :
 
 - https://www.codeply.com/
-- https://www.codeply.com/
 - https://onecompiler.com/bootstrap
 - ...
 
