@@ -272,6 +272,45 @@ var lien = $('a').attr('href');
 alert(lien);
 ```
 
+L'exemple Ajax fourni utilise le script PHP `fortune.php` qui est hébergé sur le site http://tvaira.free.fr/ :
+
+```php
+<?php
+$file = file("fortune.txt");
+srand((double)microtime()*1000000);
+while ($quote1 == "")
+{
+   //$quote = preg_replace("\n","",$file[rand(0,count($file))]);
+   $quote1 = $file[rand(0,count($file))];
+}
+echo "<blockquote class='biggest'>";
+echo "<p>$quote1</p>";
+echo "</blockquote>";
+?>
+```
+
+La base de données de citations est ici un simple fichier texte :
+
+```
+Chuck Norris a fini son forfait illimité.
+Google ne recherchera pas Chuck Norris car il sait que personne ne peut trouver Chuck Norris, c'est lui qui vous trouvera.
+Quand Google ne trouve pas quelque chose, il demande à Chuck Norris.
+Chuck Norris peut diviser par zéro.
+Chuck Norris a déjà compté jusqu'à l'infini. Deux fois.
+Chuck Norris connait la dernière décimale de Pi.
+A l'école, c'est le professeur qui devait lever la main pour parler a Chuck Norris.
+Windows ne demande jamais à Chuck Norris d'envoyer le rapport d'erreur. Bill Gates vient le chercher lui même, avec toutes ses excuses.
+Quand Chuck Norris utilise Windows, il ne plante pas.
+Chuck Norris peut supprimer la corbeille.
+Chuck Norris a piraté la CIA avec un convertisseur euro.
+Chuck Norris grave ses CDs avec un compas.
+Chuck Norris n'est pas au courant de ce site. Autrement, il aurait supprimé Internet.
+Chuck Norris peut écrire un traitement de texte avec la souris.
+...
+```
+
+> `fortune` est un programme simple qui affiche un message au hasard provenant d'une base de données de citations. La plupart des distributions de fortune comprennent des fichiers de citations de personnalités célèbres, de phrases telles que celles des _fortune cookies_ (d'où le nom), et d'autres messages humoristiques. Fortune se trouve principalement sur les systèmes UNIX, mais des clients pour d'autres plateformes existent également. Lien : https://fr.wikipedia.org/wiki/Fortune_(logiciel)
+
 ### Divers
 
 Il existe de très très nombreuses bibliothèques JavaScript.

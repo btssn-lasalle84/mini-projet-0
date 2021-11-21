@@ -94,6 +94,8 @@ Le dossier `tests` fournit des ressources et contient des programmes d'exemples 
   - `test-hello-world-1.html` : met en oeuvre du code javascript intégré à une page web
   - `test-hello-world-2.html` : met en oeuvre du code javascript externe à une page web
   - `test-plotly.html` : montre l'affichage d'un graphique à partir d'un bibliothèque JavaScript
+  - `test-jquery.html` : permet de tester l'utilisation de jQuery
+  - `test-ajax.html` : met en oeuvre Ajax avec jQuery
 - `php` :
   - `php-version.php` : permet de tester la présence de l'interpréteur PHP en affichant sa version
   - `php-portserie.php` : réalise un test de communication série avec un Arduino sous GNU/Linux
