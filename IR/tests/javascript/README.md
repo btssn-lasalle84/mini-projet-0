@@ -162,6 +162,8 @@ AJAX n’est pas une technologie en elle-même, mais un terme qui évoque l’ut
 - l’objet XMLHttpRequest pour échanger et manipuler les données de manière asynchrone avec le serveur Web.
 - XML/JSON pour le format des données informatives et visuelles
 
+Voir : [jQuery](#jquery)
+
 ### JSON
 
 JSON (_JavaScript Object Notation_) est un format de données textuelles dérivé de la notation des objets du langage JavaScript.
