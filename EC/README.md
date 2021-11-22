@@ -16,9 +16,3 @@ Exemple :
 - Mbed : https://os.mbed.com/ et https://os.mbed.com/docs/mbed-os/v6.15/quick-start/build-with-the-online-compiler.html
 
 > Mbed est une plate-forme et le système d'exploitation pour les appareils connectés à Internet sur la base de 32 bits microcontrôleurs ARM Cortex-M.
-
-## Simulateur
-
-Le simulateur permet de valider des éléments développés pour la partie IR.
-
-Il utilise un Arduino UNO et un shield 321MAKER.
