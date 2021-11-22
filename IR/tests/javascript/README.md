@@ -198,6 +198,8 @@ Exemple JSON:
 
 jQuery est une bibliothèque JavaScript libre et multiplateforme créée pour faciliter l’écriture de scripts côté client dans le code HTML des pages web.
 
+Site officiel : https://jquery.com/
+
 Le but de la bibliothèque étant le parcours et la modification du DOM. Elle contient de nombreuses fonctionnalités : notamment des animations, la manipulation des feuilles de style en cascade (accessibilité des classes et attributs), la gestion des évènements, etc.
 
 L’utilisation d’Ajax est facilitée et de nombreux _plugins_ sont présents.
@@ -321,7 +323,7 @@ En voici quelques unes :
 
 **DataTables** est un _plugin_ jQuery open-source permettant de dynamiser un tableau HTML. Cette bibliothèque écrite en Javascript offre un grand nombre de configurations pour améliorer l’ergonomie des grilles de données, surtout lorsqu’elles ont des proportions imposantes.
 
-**Plotly** est une bibliothèque graphique JavaScript permettant de créer notamment des diagrammes graphiques. Lien : https://plotly.com/javascript/
+**Plotly** est une bibliothèque graphique JavaScript permettant de créer notamment des diagrammes graphiques. Lien : https://plotly.com/javascript/ et https://www.w3schools.com/js/js_graphics.asp
 
 **Industrial.js** fournit quelques _widgets_ techniques. Lien : http://brennana.github.io/industrial-js/
 

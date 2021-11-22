@@ -169,6 +169,7 @@ Port série :
 - http://tvaira.free.fr/projets/activites/peripherique-usb.html
 
 Fonctions sur les systèmes de fichiers : https://www.php.net/manual/fr/ref.filesystem.php
+
 ### SQLite
 
 SQLite est une bibliothèque écrite en C qui propose un moteur de base de données relationnelle accessible par le langage SQL.
@@ -292,7 +293,7 @@ $ sudo systemctl stop mysql.service
 ...
 ```
 
-Lien : https://doc.ubuntu-fr.org/mysql
+Liens : https://www.mysql.com/fr/ et https://doc.ubuntu-fr.org/mysql
 
 Pour installer une base de données, il faut :
 
@@ -316,9 +317,7 @@ DROP DATABASE IF EXISTS `salles`;
 CREATE DATABASE `salles` DEFAULT CHARACTER SET utf8;
 USE `salles`;
 
---
 -- Structure de la table `salles`
---
 
 CREATE TABLE IF NOT EXISTS `salles` (
   `idSalle` int(11) unsigned NOT NULL AUTO_INCREMENT,
@@ -330,9 +329,7 @@ CREATE TABLE IF NOT EXISTS `salles` (
   PRIMARY KEY (`idSalle`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
---
 -- Contenu de la table `salles`
---
 
 INSERT INTO `salles` (`idSalle`, `nom`, `description`, `ip`, `port`, `etat`) VALUES
 (1, 'B20', 'salle BTS SN', '192.168.52.30', 5000, 1),
@@ -344,7 +341,6 @@ On peut créer un utilisateur pour cette base de données :
 ```
 mysql> USE mysql;
 mysql> SELECT Host, User FROM user;
-
 mysql> CREATE USER 'test'@'%' IDENTIFIED BY 'password';
 mysql> GRANT ALL PRIVILEGES ON `salles`.* TO 'test'@'%';
 mysql> FLUSH PRIVILEGES;
