@@ -1,0 +1,7 @@
+<map id="traiterTrame" name="traiterTrame">
+<area shape="rect" id="node1" title="Traite une trame." alt="" coords="5,56,97,83"/>
+<area shape="rect" id="node2" href="$shield_8cpp.html#a1fdf3d73262fcaad675f10ecdadd43dd" title=" " alt="" coords="145,5,295,32"/>
+<area shape="rect" id="node3" href="$communication_8cpp.html#a94e0cb8f6bcdda363fbf983b936464c0" title="Envoie une trame sur la liaision série." alt="" coords="167,56,273,83"/>
+<area shape="rect" id="node5" href="$sonde_8cpp.html#a7267e32663415ec61f2a95860818544e" title="Retourne les données de la Sonde suivant le protocole." alt="" coords="155,107,285,133"/>
+<area shape="rect" id="node4" href="$communication_8cpp.html#a98feaffe4cbc118c767d8c605a7a86b2" title=" " alt="" coords="343,56,432,83"/>
+</map>

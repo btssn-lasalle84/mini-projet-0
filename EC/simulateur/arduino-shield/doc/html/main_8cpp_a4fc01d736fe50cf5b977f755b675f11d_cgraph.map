@@ -1,0 +1,17 @@
+<map id="setup" name="setup">
+<area shape="rect" id="node1" title=" " alt="" coords="5,269,60,295"/>
+<area shape="rect" id="node2" href="$shield_8cpp.html#a9061739fe5d7dba36fdc650ae05a395d" title=" " alt="" coords="132,117,228,143"/>
+<area shape="rect" id="node8" href="$sonde_8cpp.html#aedd6c6c18cd1c1386e261aa8b8f0b40e" title="Initialise les capteurs." alt="" coords="117,243,243,270"/>
+<area shape="rect" id="node10" href="$communication_8cpp.html#aee44543d85a1ecedb8df6bba3b6b1ced" title="Initialise la liaison série." alt="" coords="108,294,252,321"/>
+<area shape="rect" id="node12" href="$shield_8cpp.html#a26521960f1021d3f05ad5329619b50d1" title=" " alt="" coords="125,345,235,371"/>
+<area shape="rect" id="node3" href="$shield_8cpp.html#abcfeca6b6f8f4c7bfa443423ea7103f7" title=" " alt="" coords="527,155,671,182"/>
+<area shape="rect" id="node4" href="$shield_8cpp.html#a95724cabbbc54f7bc074b954b4e0bd01" title=" " alt="" coords="303,41,476,67"/>
+<area shape="rect" id="node5" href="$shield_8cpp.html#ab904edf827fa98ae3b8f6632405a9960" title=" " alt="" coords="300,91,479,118"/>
+<area shape="rect" id="node6" href="$shield_8cpp.html#a1258a10fe85a664bbef697a3ea23fe39" title=" " alt="" coords="304,142,475,169"/>
+<area shape="rect" id="node7" href="$shield_8cpp.html#a1fdf3d73262fcaad675f10ecdadd43dd" title=" " alt="" coords="315,193,464,219"/>
+<area shape="rect" id="node9" href="$sonde_8cpp.html#a160a8725f72977b73e1a6edc50d10ecb" title="capteur de température et d&#39;humidité" alt="" coords="369,243,409,270"/>
+<area shape="rect" id="node11" href="$communication_8cpp.html#a98feaffe4cbc118c767d8c605a7a86b2" title=" " alt="" coords="345,294,434,321"/>
+<area shape="rect" id="node13" href="$shield_8cpp.html#a1d5d0b9dab2bd6796b0f267f0ef3eb7d" title=" " alt="" coords="334,395,445,422"/>
+<area shape="rect" id="node15" href="$shield_8cpp.html#a2c2e37005529028afe9a2de15fceb397" title=" " alt="" coords="334,345,445,371"/>
+<area shape="rect" id="node14" href="$shield_8cpp.html#ab8ec20b8c8ea69ba0827e632452a9aee" title=" " alt="" coords="533,370,664,397"/>
+</map>

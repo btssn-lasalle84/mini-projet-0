@@ -1,0 +1,420 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.17"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Mini-projet 0: Référence du fichier communication.cpp</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="customdoxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="logo-chauffage.png"/></td>
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Mini-projet 0
+   &#160;<span id="projectnumber">0.1</span>
+   </div>
+   <div id="projectbrief">BTS SN LaSalle Avignon 2021/2022</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Généré par Doxygen 1.8.17 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Recherche');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(document).ready(function(){initNavTree('communication_8cpp.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#func-members">Fonctions</a>  </div>
+  <div class="headertitle">
+<div class="title">Référence du fichier communication.cpp</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>Définition des fonctions pour gérer la communication série.  
+<a href="#details">Plus de détails...</a></p>
+<div class="textblock"><code>#include &quot;<a class="el" href="communication_8h_source.html">communication.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="sonde_8h_source.html">sonde.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="shield_8h_source.html">shield.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="pinout_8h_source.html">../../include/pinout.h</a>&quot;</code><br />
+</div>
+<p><a href="communication_8cpp_source.html">Aller au code source de ce fichier.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+Fonctions</h2></td></tr>
+<tr class="memitem:a94e0cb8f6bcdda363fbf983b936464c0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="communication_8cpp.html#a94e0cb8f6bcdda363fbf983b936464c0">envoyerTrame</a> (String <a class="el" href="main_8cpp.html#a6a9b9d1da911e518a4af97c6c58eca29">trame</a>)</td></tr>
+<tr class="memdesc:a94e0cb8f6bcdda363fbf983b936464c0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Envoie une trame sur la liaision série.  <a href="communication_8cpp.html#a94e0cb8f6bcdda363fbf983b936464c0">Plus de détails...</a><br /></td></tr>
+<tr class="separator:a94e0cb8f6bcdda363fbf983b936464c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aee44543d85a1ecedb8df6bba3b6b1ced"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="communication_8cpp.html#aee44543d85a1ecedb8df6bba3b6b1ced">initialiserLiaisonSerie</a> ()</td></tr>
+<tr class="memdesc:aee44543d85a1ecedb8df6bba3b6b1ced"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialise la liaison série.  <a href="communication_8cpp.html#aee44543d85a1ecedb8df6bba3b6b1ced">Plus de détails...</a><br /></td></tr>
+<tr class="separator:aee44543d85a1ecedb8df6bba3b6b1ced"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a98feaffe4cbc118c767d8c605a7a86b2"><td class="memItemLeft" align="right" valign="top">static SoftwareSerial&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="communication_8cpp.html#a98feaffe4cbc118c767d8c605a7a86b2">liaisonSerie</a> (<a class="el" href="pinout_8h.html#a58d754bc1e9db1b928a4aa7bb958abf1">RX</a>, <a class="el" href="pinout_8h.html#a6301ad0c499ce5ba766dc89b8f988368">TX</a>)</td></tr>
+<tr class="separator:a98feaffe4cbc118c767d8c605a7a86b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a90a86e52105ad721974e211bdeaa8baf"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="communication_8cpp.html#a90a86e52105ad721974e211bdeaa8baf">lireTrame</a> (String &amp;<a class="el" href="main_8cpp.html#a6a9b9d1da911e518a4af97c6c58eca29">trame</a>)</td></tr>
+<tr class="memdesc:a90a86e52105ad721974e211bdeaa8baf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Lit une trame sur la liaison série.  <a href="communication_8cpp.html#a90a86e52105ad721974e211bdeaa8baf">Plus de détails...</a><br /></td></tr>
+<tr class="separator:a90a86e52105ad721974e211bdeaa8baf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9cecced9ea30f6926f0910db13741a83"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="communication_8cpp.html#a9cecced9ea30f6926f0910db13741a83">traiterTrame</a> (String &amp;<a class="el" href="main_8cpp.html#a6a9b9d1da911e518a4af97c6c58eca29">trame</a>)</td></tr>
+<tr class="memdesc:a9cecced9ea30f6926f0910db13741a83"><td class="mdescLeft">&#160;</td><td class="mdescRight">Traite une trame.  <a href="communication_8cpp.html#a9cecced9ea30f6926f0910db13741a83">Plus de détails...</a><br /></td></tr>
+<tr class="separator:a9cecced9ea30f6926f0910db13741a83"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Description détaillée</h2>
+<div class="textblock"><p>Définition des fonctions pour gérer la communication série. </p>
+<dl class="section author"><dt>Auteur</dt><dd>Thierry Vaira </dd></dl>
+<dl class="section version"><dt>Version</dt><dd>0.1 </dd></dl>
+
+<p class="definition">Définition dans le fichier <a class="el" href="communication_8cpp_source.html">communication.cpp</a>.</p>
+</div><h2 class="groupheader">Documentation des fonctions</h2>
+<a id="a94e0cb8f6bcdda363fbf983b936464c0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a94e0cb8f6bcdda363fbf983b936464c0">&#9670;&nbsp;</a></span>envoyerTrame()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void envoyerTrame </td>
+          <td>(</td>
+          <td class="paramtype">String&#160;</td>
+          <td class="paramname"><em>trame</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Envoie une trame sur la liaision série. </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">trame</td><td>String la trame à envoyer </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Définition à la ligne <a class="el" href="communication_8cpp_source.html#l00054">54</a> du fichier <a class="el" href="communication_8cpp_source.html">communication.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;{</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;  <a class="code" href="communication_8cpp.html#a98feaffe4cbc118c767d8c605a7a86b2">liaisonSerie</a>.write(<a class="code" href="main_8cpp.html#a6a9b9d1da911e518a4af97c6c58eca29">trame</a>.c_str(), <a class="code" href="main_8cpp.html#a6a9b9d1da911e518a4af97c6c58eca29">trame</a>.length());</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;<span class="preprocessor">  #ifdef DEBUG_COMMUNICATION</span></div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;  Serial.print(F(<span class="stringliteral">&quot;Trame emise : &quot;</span>));</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;  Serial.print(<a class="code" href="main_8cpp.html#a6a9b9d1da911e518a4af97c6c58eca29">trame</a>);</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;<span class="preprocessor">  #endif</span></div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;}</div>
+</div><!-- fragment -->
+<p class="reference">Références <a class="el" href="communication_8cpp.html#a98feaffe4cbc118c767d8c605a7a86b2">liaisonSerie()</a>, et <a class="el" href="main_8cpp_source.html#l00026">trame</a>.</p>
+
+<p class="reference">Référencé par <a class="el" href="main_8cpp_source.html#l00041">loop()</a>, et <a class="el" href="communication_8cpp_source.html#l00068">traiterTrame()</a>.</p>
+<div class="dynheader">
+Voici le graphe d'appel pour cette fonction :</div>
+<div class="dyncontent">
+<div class="center"><img src="communication_8cpp_a94e0cb8f6bcdda363fbf983b936464c0_cgraph.png" border="0" usemap="#communication_8cpp_a94e0cb8f6bcdda363fbf983b936464c0_cgraph" alt=""/></div>
+<map name="communication_8cpp_a94e0cb8f6bcdda363fbf983b936464c0_cgraph" id="communication_8cpp_a94e0cb8f6bcdda363fbf983b936464c0_cgraph">
+<area shape="rect" title="Envoie une trame sur la liaision série." alt="" coords="5,5,111,32"/>
+<area shape="rect" href="communication_8cpp.html#a98feaffe4cbc118c767d8c605a7a86b2" title=" " alt="" coords="159,5,248,32"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="aee44543d85a1ecedb8df6bba3b6b1ced"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aee44543d85a1ecedb8df6bba3b6b1ced">&#9670;&nbsp;</a></span>initialiserLiaisonSerie()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void initialiserLiaisonSerie </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Initialise la liaison série. </p>
+
+<p class="definition">Définition à la ligne <a class="el" href="communication_8cpp_source.html#l00020">20</a> du fichier <a class="el" href="communication_8cpp_source.html">communication.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;{</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    pinMode(<a class="code" href="pinout_8h.html#a58d754bc1e9db1b928a4aa7bb958abf1">RX</a>, INPUT);</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    pinMode(<a class="code" href="pinout_8h.html#a6301ad0c499ce5ba766dc89b8f988368">TX</a>, OUTPUT);</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    <a class="code" href="communication_8cpp.html#a98feaffe4cbc118c767d8c605a7a86b2">liaisonSerie</a>.begin(<a class="code" href="communication_8h.html#a9b274bd41c6308f4a234d7f4e4fb56c7">DEBIT_SERIE</a>);</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;}</div>
+</div><!-- fragment -->
+<p class="reference">Références <a class="el" href="communication_8h_source.html#l00017">DEBIT_SERIE</a>, <a class="el" href="communication_8cpp.html#a98feaffe4cbc118c767d8c605a7a86b2">liaisonSerie()</a>, <a class="el" href="pinout_8h_source.html#l00106">RX</a>, et <a class="el" href="pinout_8h_source.html#l00107">TX</a>.</p>
+
+<p class="reference">Référencé par <a class="el" href="main_8cpp_source.html#l00028">setup()</a>.</p>
+<div class="dynheader">
+Voici le graphe d'appel pour cette fonction :</div>
+<div class="dyncontent">
+<div class="center"><img src="communication_8cpp_aee44543d85a1ecedb8df6bba3b6b1ced_cgraph.png" border="0" usemap="#communication_8cpp_aee44543d85a1ecedb8df6bba3b6b1ced_cgraph" alt=""/></div>
+<map name="communication_8cpp_aee44543d85a1ecedb8df6bba3b6b1ced_cgraph" id="communication_8cpp_aee44543d85a1ecedb8df6bba3b6b1ced_cgraph">
+<area shape="rect" title="Initialise la liaison série." alt="" coords="5,5,149,32"/>
+<area shape="rect" href="communication_8cpp.html#a98feaffe4cbc118c767d8c605a7a86b2" title=" " alt="" coords="197,5,287,32"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a98feaffe4cbc118c767d8c605a7a86b2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a98feaffe4cbc118c767d8c605a7a86b2">&#9670;&nbsp;</a></span>liaisonSerie()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static SoftwareSerial liaisonSerie </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="pinout_8h.html#a58d754bc1e9db1b928a4aa7bb958abf1">RX</a>&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="pinout_8h.html#a6301ad0c499ce5ba766dc89b8f988368">TX</a>&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="reference">Référencé par <a class="el" href="communication_8cpp_source.html#l00054">envoyerTrame()</a>, <a class="el" href="communication_8cpp_source.html#l00020">initialiserLiaisonSerie()</a>, et <a class="el" href="communication_8cpp_source.html#l00032">lireTrame()</a>.</p>
+
+</div>
+</div>
+<a id="a90a86e52105ad721974e211bdeaa8baf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a90a86e52105ad721974e211bdeaa8baf">&#9670;&nbsp;</a></span>lireTrame()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool lireTrame </td>
+          <td>(</td>
+          <td class="paramtype">String &amp;&#160;</td>
+          <td class="paramname"><em>trame</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Lit une trame sur la liaison série. </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">trame</td><td>String la trame reçue </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Renvoie</dt><dd>bool vrai si une trame a été reçue sinon faux </dd></dl>
+
+<p class="definition">Définition à la ligne <a class="el" href="communication_8cpp_source.html#l00032">32</a> du fichier <a class="el" href="communication_8cpp_source.html">communication.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;{</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;  <a class="code" href="main_8cpp.html#a6a9b9d1da911e518a4af97c6c58eca29">trame</a> = <span class="stringliteral">&quot;&quot;</span>;</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;  <span class="keywordflow">if</span>(<a class="code" href="communication_8cpp.html#a98feaffe4cbc118c767d8c605a7a86b2">liaisonSerie</a>.available())</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;  {</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    <a class="code" href="main_8cpp.html#a6a9b9d1da911e518a4af97c6c58eca29">trame</a> = <a class="code" href="communication_8cpp.html#a98feaffe4cbc118c767d8c605a7a86b2">liaisonSerie</a>.readStringUntil(<a class="code" href="communication_8h.html#aafcc0c7b4996f7783c9f4e766a233487">DELIMITEUR_FIN</a>);</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    <span class="comment">// protocole ?</span></div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    <span class="keywordflow">if</span>(!<a class="code" href="main_8cpp.html#a6a9b9d1da911e518a4af97c6c58eca29">trame</a>.startsWith(<span class="stringliteral">&quot;$&quot;</span>))</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;<span class="preprocessor">    #ifdef DEBUG_COMMUNICATION</span></div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    Serial.print(F(<span class="stringliteral">&quot;Trame recue : &quot;</span>));</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    Serial.println(<a class="code" href="main_8cpp.html#a6a9b9d1da911e518a4af97c6c58eca29">trame</a>);</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    <span class="comment">//Serial.println(trame.length());</span></div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;<span class="preprocessor">    #endif</span></div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;  }</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;  <span class="keywordflow">return</span> (<a class="code" href="main_8cpp.html#a6a9b9d1da911e518a4af97c6c58eca29">trame</a>.length() &gt; 0);</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;}</div>
+</div><!-- fragment -->
+<p class="reference">Références <a class="el" href="communication_8h_source.html#l00019">DELIMITEUR_FIN</a>, <a class="el" href="communication_8cpp.html#a98feaffe4cbc118c767d8c605a7a86b2">liaisonSerie()</a>, et <a class="el" href="main_8cpp_source.html#l00026">trame</a>.</p>
+
+<p class="reference">Référencé par <a class="el" href="main_8cpp_source.html#l00041">loop()</a>.</p>
+<div class="dynheader">
+Voici le graphe d'appel pour cette fonction :</div>
+<div class="dyncontent">
+<div class="center"><img src="communication_8cpp_a90a86e52105ad721974e211bdeaa8baf_cgraph.png" border="0" usemap="#communication_8cpp_a90a86e52105ad721974e211bdeaa8baf_cgraph" alt=""/></div>
+<map name="communication_8cpp_a90a86e52105ad721974e211bdeaa8baf_cgraph" id="communication_8cpp_a90a86e52105ad721974e211bdeaa8baf_cgraph">
+<area shape="rect" title="Lit une trame sur la liaison série." alt="" coords="5,5,81,32"/>
+<area shape="rect" href="communication_8cpp.html#a98feaffe4cbc118c767d8c605a7a86b2" title=" " alt="" coords="129,5,219,32"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a9cecced9ea30f6926f0910db13741a83"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9cecced9ea30f6926f0910db13741a83">&#9670;&nbsp;</a></span>traiterTrame()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool traiterTrame </td>
+          <td>(</td>
+          <td class="paramtype">String &amp;&#160;</td>
+          <td class="paramname"><em>trame</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Traite une trame. </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">trame</td><td>String la trame à traiter </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Renvoie</dt><dd>bool vrai si une trame a été traitée sinon faux </dd></dl>
+
+<p class="definition">Définition à la ligne <a class="el" href="communication_8cpp_source.html#l00068">68</a> du fichier <a class="el" href="communication_8cpp_source.html">communication.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;{</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;  <span class="keywordtype">bool</span> valide = <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;  <a class="code" href="main_8cpp.html#a6a9b9d1da911e518a4af97c6c58eca29">trame</a>.toUpperCase();</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160; </div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;  <span class="keywordflow">if</span>(<a class="code" href="main_8cpp.html#a6a9b9d1da911e518a4af97c6c58eca29">trame</a>.length() &lt; 1)</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160; </div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;  <span class="keywordflow">if</span>(<a class="code" href="main_8cpp.html#a6a9b9d1da911e518a4af97c6c58eca29">trame</a>.startsWith(<span class="stringliteral">&quot;$SET;&quot;</span>)) <span class="comment">// mode commande ?</span></div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;  {</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;    <span class="keywordflow">if</span>(<a class="code" href="main_8cpp.html#a6a9b9d1da911e518a4af97c6c58eca29">trame</a>.indexOf(<span class="stringliteral">&quot;CHAUFFAGE;&quot;</span>) != -1)</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;    {</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;        <span class="keywordflow">if</span>(<a class="code" href="main_8cpp.html#a6a9b9d1da911e518a4af97c6c58eca29">trame</a>.indexOf(<span class="stringliteral">&quot;ON&quot;</span>) != -1)</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;        {</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;          <a class="code" href="shield_8cpp.html#a1fdf3d73262fcaad675f10ecdadd43dd">commanderLedRouge</a>(<span class="keyword">true</span>);</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;          valide = <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;        }</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;        <span class="keywordflow">else</span> <span class="keywordflow">if</span>(<a class="code" href="main_8cpp.html#a6a9b9d1da911e518a4af97c6c58eca29">trame</a>.indexOf(<span class="stringliteral">&quot;OFF&quot;</span>) != -1)</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;        {</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;          <a class="code" href="shield_8cpp.html#a1fdf3d73262fcaad675f10ecdadd43dd">commanderLedRouge</a>(<span class="keyword">false</span>);</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;          valide = <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;        }</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;    }</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;  }</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;  <span class="keywordflow">else</span> <span class="keywordflow">if</span>(<a class="code" href="main_8cpp.html#a6a9b9d1da911e518a4af97c6c58eca29">trame</a>.startsWith(<span class="stringliteral">&quot;$GET;&quot;</span>)) <span class="comment">// mode requête/réponse ?</span></div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;  {</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;    <span class="keywordflow">if</span>(<a class="code" href="main_8cpp.html#a6a9b9d1da911e518a4af97c6c58eca29">trame</a>.indexOf(<span class="stringliteral">&quot;SONDE&quot;</span>) != -1)</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;    {</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;      String trameDonneesSonde = <a class="code" href="sonde_8cpp.html#a7267e32663415ec61f2a95860818544e">getDonneesSonde</a>();</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;      <a class="code" href="communication_8cpp.html#a94e0cb8f6bcdda363fbf983b936464c0">envoyerTrame</a>(trameDonneesSonde);</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;      valide = <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;    }</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;  }</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;  <span class="keywordflow">else</span></div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;  {</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;<span class="preprocessor">    #ifdef DEBUG_COMMUNICATION</span></div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;    Serial.print(F(<span class="stringliteral">&quot;Trame inconnue : &quot;</span>));</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;    Serial.print(<a class="code" href="main_8cpp.html#a6a9b9d1da911e518a4af97c6c58eca29">trame</a>);</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;<span class="preprocessor">    #endif</span></div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;  }</div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160; </div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;  <span class="keywordflow">if</span>(valide)</div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;    <a class="code" href="main_8cpp.html#a6a9b9d1da911e518a4af97c6c58eca29">trame</a> = <span class="stringliteral">&quot;&quot;</span>;</div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160; </div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;  <span class="keywordflow">return</span> valide;</div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;}</div>
+</div><!-- fragment -->
+<p class="reference">Références <a class="el" href="shield_8cpp_source.html#l00098">commanderLedRouge()</a>, <a class="el" href="communication_8cpp_source.html#l00054">envoyerTrame()</a>, <a class="el" href="sonde_8cpp_source.html#l00073">getDonneesSonde()</a>, et <a class="el" href="main_8cpp_source.html#l00026">trame</a>.</p>
+
+<p class="reference">Référencé par <a class="el" href="main_8cpp_source.html#l00041">loop()</a>.</p>
+<div class="dynheader">
+Voici le graphe d'appel pour cette fonction :</div>
+<div class="dyncontent">
+<div class="center"><img src="communication_8cpp_a9cecced9ea30f6926f0910db13741a83_cgraph.png" border="0" usemap="#communication_8cpp_a9cecced9ea30f6926f0910db13741a83_cgraph" alt=""/></div>
+<map name="communication_8cpp_a9cecced9ea30f6926f0910db13741a83_cgraph" id="communication_8cpp_a9cecced9ea30f6926f0910db13741a83_cgraph">
+<area shape="rect" title="Traite une trame." alt="" coords="5,56,97,83"/>
+<area shape="rect" href="shield_8cpp.html#a1fdf3d73262fcaad675f10ecdadd43dd" title=" " alt="" coords="145,5,295,32"/>
+<area shape="rect" href="communication_8cpp.html#a94e0cb8f6bcdda363fbf983b936464c0" title="Envoie une trame sur la liaision série." alt="" coords="167,56,273,83"/>
+<area shape="rect" href="sonde_8cpp.html#a7267e32663415ec61f2a95860818544e" title="Retourne les données de la Sonde suivant le protocole." alt="" coords="155,107,285,133"/>
+<area shape="rect" href="communication_8cpp.html#a98feaffe4cbc118c767d8c605a7a86b2" title=" " alt="" coords="343,56,432,83"/>
+</map>
+</div>
+
+</div>
+</div>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<div class="ttc" id="acommunication_8cpp_html_a98feaffe4cbc118c767d8c605a7a86b2"><div class="ttname"><a href="communication_8cpp.html#a98feaffe4cbc118c767d8c605a7a86b2">liaisonSerie</a></div><div class="ttdeci">static SoftwareSerial liaisonSerie(RX, TX)</div></div>
+<div class="ttc" id="asonde_8cpp_html_a7267e32663415ec61f2a95860818544e"><div class="ttname"><a href="sonde_8cpp.html#a7267e32663415ec61f2a95860818544e">getDonneesSonde</a></div><div class="ttdeci">String getDonneesSonde()</div><div class="ttdoc">Retourne les données de la Sonde suivant le protocole.</div><div class="ttdef"><b>Definition:</b> <a href="sonde_8cpp_source.html#l00073">sonde.cpp:73</a></div></div>
+<div class="ttc" id="amain_8cpp_html_a6a9b9d1da911e518a4af97c6c58eca29"><div class="ttname"><a href="main_8cpp.html#a6a9b9d1da911e518a4af97c6c58eca29">trame</a></div><div class="ttdeci">String trame</div><div class="ttdoc">la trame de communication</div><div class="ttdef"><b>Definition:</b> <a href="main_8cpp_source.html#l00026">main.cpp:26</a></div></div>
+<div class="ttc" id="acommunication_8cpp_html_a94e0cb8f6bcdda363fbf983b936464c0"><div class="ttname"><a href="communication_8cpp.html#a94e0cb8f6bcdda363fbf983b936464c0">envoyerTrame</a></div><div class="ttdeci">void envoyerTrame(String trame)</div><div class="ttdoc">Envoie une trame sur la liaision série.</div><div class="ttdef"><b>Definition:</b> <a href="communication_8cpp_source.html#l00054">communication.cpp:54</a></div></div>
+<div class="ttc" id="acommunication_8h_html_a9b274bd41c6308f4a234d7f4e4fb56c7"><div class="ttname"><a href="communication_8h.html#a9b274bd41c6308f4a234d7f4e4fb56c7">DEBIT_SERIE</a></div><div class="ttdeci">#define DEBIT_SERIE</div><div class="ttdoc">le débit de la liaison série</div><div class="ttdef"><b>Definition:</b> <a href="communication_8h_source.html#l00017">communication.h:17</a></div></div>
+<div class="ttc" id="ashield_8cpp_html_a1fdf3d73262fcaad675f10ecdadd43dd"><div class="ttname"><a href="shield_8cpp.html#a1fdf3d73262fcaad675f10ecdadd43dd">commanderLedRouge</a></div><div class="ttdeci">void commanderLedRouge(bool etat)</div><div class="ttdef"><b>Definition:</b> <a href="shield_8cpp_source.html#l00098">shield.cpp:98</a></div></div>
+<div class="ttc" id="apinout_8h_html_a58d754bc1e9db1b928a4aa7bb958abf1"><div class="ttname"><a href="pinout_8h.html#a58d754bc1e9db1b928a4aa7bb958abf1">RX</a></div><div class="ttdeci">static const uint8_t RX</div><div class="ttdef"><b>Definition:</b> <a href="pinout_8h_source.html#l00106">pinout.h:106</a></div></div>
+<div class="ttc" id="apinout_8h_html_a6301ad0c499ce5ba766dc89b8f988368"><div class="ttname"><a href="pinout_8h.html#a6301ad0c499ce5ba766dc89b8f988368">TX</a></div><div class="ttdeci">static const uint8_t TX</div><div class="ttdef"><b>Definition:</b> <a href="pinout_8h_source.html#l00107">pinout.h:107</a></div></div>
+<div class="ttc" id="acommunication_8h_html_aafcc0c7b4996f7783c9f4e766a233487"><div class="ttname"><a href="communication_8h.html#aafcc0c7b4996f7783c9f4e766a233487">DELIMITEUR_FIN</a></div><div class="ttdeci">#define DELIMITEUR_FIN</div><div class="ttdoc">le délimiteur de fin de trame</div><div class="ttdef"><b>Definition:</b> <a href="communication_8h_source.html#l00019">communication.h:19</a></div></div>
+<!-- HTML footer for doxygen 1.9.1-->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_97aefd0d527b934f1d99a682da8fe6a9.html">lib</a></li><li class="navelem"><a class="el" href="dir_1b3272713a87fc9d111946fa64403b6d.html">communication</a></li><li class="navelem"><a class="el" href="communication_8cpp.html">communication.cpp</a></li>
+    <li class="footer"><img class="footer" src="lasalle-logo.png" height="31" alt="La Salle Avignon"/>&nbsp;<b>Campus La Salle Avignon</b>&nbsp;-&nbsp;9 Rue Notre Dame des 7 douleurs&nbsp;-&nbsp;BP 50165&nbsp;-&nbsp;84008 Avignon&nbsp;-&nbsp;Généré le Lundi 22 Novembre 2021 16:57:12 pour Mini-projet 0 par&nbsp;<a href="https://www.doxygen.org/index.html">doxygen</a>&nbsp;1.8.17&nbsp;</li>
+  </ul>
+</div>
+</body>
+</html>

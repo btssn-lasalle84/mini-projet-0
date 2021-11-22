@@ -1,0 +1,176 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.17"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Mini-projet 0: Présentation</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="customdoxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="logo-chauffage.png"/></td>
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Mini-projet 0
+   &#160;<span id="projectnumber">0.1</span>
+   </div>
+   <div id="projectbrief">BTS SN LaSalle Avignon 2021/2022</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Généré par Doxygen 1.8.17 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Recherche');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(document).ready(function(){initNavTree('index.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="PageDoc"><div class="header">
+  <div class="headertitle">
+<div class="title">Présentation </div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><p>Il s'agit de réaliser un simulateur pour un exemple de mini-projet de première année de BTS SN.</p>
+<p>Le simulateur présenté est basé sur un Arduino UNO R3 et un <em>shield</em> :</p>
+<div class="image">
+<img src="synoptique.drawio.png" alt=""/>
+</div>
+   <p>La partie électronique sera remplacée par un <em>shield</em> :</p>
+<div class="image">
+<img src="arduino-shield-321maker.jpg" alt=""/>
+</div>
+   <p>Le <em>shield</em> fournira deux sous-modules :</p>
+<ul>
+<li>une <b>sonde</b> DHT11 permettant d'obtenir la température en °C et l'humidité en %</li>
+<li>une led rouge permettant de signaler l'activation ou non du <b>chauffage</b></li>
+</ul>
+<p>Les fonctions réalisées par ce module sont :</p>
+<ul>
+<li>d'acquérir les données de la sonde DHT11 (température en °C et humidité en %)</li>
+<li>de commander la led rouge</li>
+<li>de dialoguer avec l'application web</li>
+</ul>
+<h2>PlatformIO</h2>
+<div class="fragment"><div class="line">; PlatformIO Project Configuration File</div>
+<div class="line">; https://docs.platformio.org/page/projectconf.html</div>
+<div class="line"> </div>
+<div class="line">[env:uno]</div>
+<div class="line">platform = atmelavr</div>
+<div class="line">board = uno ; mcu : atmega328p</div>
+<div class="line">framework = arduino</div>
+<div class="line">lib_deps =</div>
+<div class="line">    Adafruit Unified Sensor</div>
+<div class="line">    DHT sensor library</div>
+<div class="line">; pour linux</div>
+<div class="line">upload_port = /dev/ttyACM0</div>
+<div class="line">upload_speed = 115200 ; par défaut</div>
+<div class="line">monitor_port = /dev/ttyACM0</div>
+<div class="line">monitor_speed = 9600 ; à définir</div>
+</div><!-- fragment --><h2>Communication série</h2>
+<p>L'application web communique avec le module électronique via une liaison série.</p>
+<p>La liaison sera soit filaire (RS232 ou TTL) soit sans fil (Bluetooth, Zigbee). Dans tous les cas, une communication série sera à mettre en oeuvre via une interface de communication.</p>
+<h3>Port série virtuel</h3>
+<p>L'interface de communication côté EC sera gérée par un objet de type <code>SoftwareSerial</code> :</p>
+<div class="fragment"><div class="line"><span class="comment">// Broches utilisées :</span></div>
+<div class="line"><span class="comment">//  - RX -&gt; D7</span></div>
+<div class="line"><span class="comment">//  - TX -&gt; D8</span></div>
+<div class="line">SoftwareSerial <a class="code" href="communication_8h.html#a7b32486906229c7a0d35493d8aef3f02">liaisonSerie</a>(<a class="code" href="pinout_8h.html#a58d754bc1e9db1b928a4aa7bb958abf1">RX</a>, <a class="code" href="pinout_8h.html#a6301ad0c499ce5ba766dc89b8f988368">TX</a>);</div>
+</div><!-- fragment --><p>Lien : <a href="https://www.arduino.cc/en/Reference/softwareSerial">https://www.arduino.cc/en/Reference/softwareSerial</a></p>
+<h3>Protocole</h3>
+<p>Le choix se fera entre un protocole orienté caractères ASCII ou orienté bits.</p>
+<blockquote class="doxtable">
+<p>Les protocoles orientés ASCII transmettent les octets sous la forme de caractères (encodés dans le jeu standard le plus souvent). Cette technique est très majoritairement utilisée pour les protocoles Internet de la couche Application (HTTP, FTP, SMTP, ...) mais aussi sur des réseaux de terrain (protocole NMEA183 ou commandes AT par exemple). Les protocoles orientés ASCII ont l'avantage de s'affranchir de la problématique de la représentation et la taille des données binaires (endianness dûs à un parc de machines hétérogène). Il existe tout de même des protocoles spécifique pour transmettre des données numériques (comme le protocole XDR (<em>eXternal Data Representation</em>)). Pour les données binaires (images, archive, ...), on utilise un encodage comme la Base64. L'inconvénient principal est de génèrer plus de d’octets mais la taille des données utiles (<em>payload</em>) et les débits sont relativement importants dans les réseaux informatiques. </p>
+</blockquote>
+<p>Ici, le protocole mis en oeuvre est orienté caractères ASCII.</p>
+<p>Les délimiteurs sont :</p>
+<ul>
+<li>délimiteur de début : <code>$</code></li>
+<li>délimiteur de champs : <code>;</code></li>
+<li>délimiteur de début : <code>\r\n</code></li>
+</ul>
+<p>Exemple de trames :</p>
+<div class="fragment"><div class="line"># Trame de requête</div>
+<div class="line">$GET;SONDE\r\n</div>
+<div class="line"> </div>
+<div class="line"># Trame de réponse</div>
+<div class="line">$SONDE;23.0;C;38;%\r\n</div>
+<div class="line"> </div>
+<div class="line"># Trames de commande</div>
+<div class="line">$SET;CHAUFFAGE;ON\r\n</div>
+<div class="line">$SET;CHAUFFAGE;OFF\r\n</div>
+</div><!-- fragment --><dl class="section author"><dt>Auteur</dt><dd>Thierry Vaira &lt;<a href="#" onclick="location.href='mai'+'lto:'+'tva'+'ir'+'a@f'+'re'+'e.f'+'r'; return false;">tvair<span style="display: none;">.nosp@m.</span>a@fr<span style="display: none;">.nosp@m.</span>ee.fr</a>&gt; </dd></dl>
+<dl class="section date"><dt>Date</dt><dd>22/11/2021 </dd></dl>
+<dl class="section version"><dt>Version</dt><dd>0.1 </dd></dl>
+</div></div><!-- PageDoc -->
+</div><!-- contents -->
+</div><!-- doc-content -->
+<div class="ttc" id="acommunication_8h_html_a7b32486906229c7a0d35493d8aef3f02"><div class="ttname"><a href="communication_8h.html#a7b32486906229c7a0d35493d8aef3f02">liaisonSerie</a></div><div class="ttdeci">SoftwareSerial liaisonSerie</div></div>
+<div class="ttc" id="apinout_8h_html_a58d754bc1e9db1b928a4aa7bb958abf1"><div class="ttname"><a href="pinout_8h.html#a58d754bc1e9db1b928a4aa7bb958abf1">RX</a></div><div class="ttdeci">static const uint8_t RX</div><div class="ttdef"><b>Definition:</b> <a href="pinout_8h_source.html#l00106">pinout.h:106</a></div></div>
+<div class="ttc" id="apinout_8h_html_a6301ad0c499ce5ba766dc89b8f988368"><div class="ttname"><a href="pinout_8h.html#a6301ad0c499ce5ba766dc89b8f988368">TX</a></div><div class="ttdeci">static const uint8_t TX</div><div class="ttdef"><b>Definition:</b> <a href="pinout_8h_source.html#l00107">pinout.h:107</a></div></div>
+<!-- HTML footer for doxygen 1.9.1-->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="footer"><img class="footer" src="lasalle-logo.png" height="31" alt="La Salle Avignon"/>&nbsp;<b>Campus La Salle Avignon</b>&nbsp;-&nbsp;9 Rue Notre Dame des 7 douleurs&nbsp;-&nbsp;BP 50165&nbsp;-&nbsp;84008 Avignon&nbsp;-&nbsp;Généré le Lundi 22 Novembre 2021 16:57:12 pour Mini-projet 0 par&nbsp;<a href="https://www.doxygen.org/index.html">doxygen</a>&nbsp;1.8.17&nbsp;</li>
+  </ul>
+</div>
+</body>
+</html>

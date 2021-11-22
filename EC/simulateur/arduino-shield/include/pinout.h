@@ -1,3 +1,11 @@
+/**
+*
+* @file include/pinout.h
+* @brief Affectation des broches du microcontrôleur Arduino ou Wemos ESP32 pour le shield 321MAKER
+* @author Thierry Vaira
+* @version 0.1
+*
+*/
 #ifndef PINOUT_H
 #define PINOUT_H
 
@@ -99,7 +107,7 @@ static const uint8_t RX         = D7; //D0;
 static const uint8_t TX         = D8; //D1;
 static const uint8_t SW1        = D2;
 static const uint8_t SW2        = D3;
-static const uint8_t DHT11      = D4;
+static const uint8_t DHT_11     = D4;
 static const uint8_t BUZZER     = D5;
 static const uint8_t IR         = D6;
 static const uint8_t RGB_ROUGE  = D9;

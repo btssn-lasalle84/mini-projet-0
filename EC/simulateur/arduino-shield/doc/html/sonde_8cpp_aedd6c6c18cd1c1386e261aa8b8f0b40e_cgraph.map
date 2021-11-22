@@ -1,0 +1,4 @@
+<map id="initialiserCapteurs" name="initialiserCapteurs">
+<area shape="rect" id="node1" title="Initialise les capteurs." alt="" coords="5,5,132,32"/>
+<area shape="rect" id="node2" href="$sonde_8cpp.html#a160a8725f72977b73e1a6edc50d10ecb" title="capteur de température et d&#39;humidité" alt="" coords="180,5,220,32"/>
+</map>

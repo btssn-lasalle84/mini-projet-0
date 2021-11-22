@@ -1,0 +1,651 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.17"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Mini-projet 0: Référence du fichier sonde.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="customdoxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="logo-chauffage.png"/></td>
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Mini-projet 0
+   &#160;<span id="projectnumber">0.1</span>
+   </div>
+   <div id="projectbrief">BTS SN LaSalle Avignon 2021/2022</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Généré par Doxygen 1.8.17 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Recherche');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(document).ready(function(){initNavTree('sonde_8h.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#define-members">Macros</a> &#124;
+<a href="#func-members">Fonctions</a> &#124;
+<a href="#var-members">Variables</a>  </div>
+  <div class="headertitle">
+<div class="title">Référence du fichier sonde.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>Déclaration des fonctions pour gérer le module Sonde.  
+<a href="#details">Plus de détails...</a></p>
+<div class="textblock"><code>#include &lt;Arduino.h&gt;</code><br />
+<code>#include &lt;Adafruit_Sensor.h&gt;</code><br />
+<code>#include &lt;DHT.h&gt;</code><br />
+</div>
+<p><a href="sonde_8h_source.html">Aller au code source de ce fichier.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
+Macros</h2></td></tr>
+<tr class="memitem:a84ca18255a5457a3c9302d71855ea13c"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sonde_8h.html#a84ca18255a5457a3c9302d71855ea13c">DEBUG_SONDE</a></td></tr>
+<tr class="separator:a84ca18255a5457a3c9302d71855ea13c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa45df0c3ce34e44817bb334702138b3c"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sonde_8h.html#aa45df0c3ce34e44817bb334702138b3c">PERIODE_ACQUISITION_DEFAUT</a>&#160;&#160;&#160;500</td></tr>
+<tr class="memdesc:aa45df0c3ce34e44817bb334702138b3c"><td class="mdescLeft">&#160;</td><td class="mdescRight">période d'acquisition par défaut en millisecondes  <a href="sonde_8h.html#aa45df0c3ce34e44817bb334702138b3c">Plus de détails...</a><br /></td></tr>
+<tr class="separator:aa45df0c3ce34e44817bb334702138b3c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+Fonctions</h2></td></tr>
+<tr class="memitem:ab883c1cb86c46e248e5c3c5452015547"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sonde_8h.html#ab883c1cb86c46e248e5c3c5452015547">acquerir</a> ()</td></tr>
+<tr class="memdesc:ab883c1cb86c46e248e5c3c5452015547"><td class="mdescLeft">&#160;</td><td class="mdescRight">Réalise l'acquisition des mesures de la Sonde à l'échéance de la période.  <a href="sonde_8h.html#ab883c1cb86c46e248e5c3c5452015547">Plus de détails...</a><br /></td></tr>
+<tr class="separator:ab883c1cb86c46e248e5c3c5452015547"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac4a0ba5126b32a6119b543e16673e664"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sonde_8h.html#ac4a0ba5126b32a6119b543e16673e664">estEcheance</a> (unsigned long intervalle)</td></tr>
+<tr class="memdesc:ac4a0ba5126b32a6119b543e16673e664"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retourne true si l'échéance de la période fixée a été atteinte.  <a href="sonde_8h.html#ac4a0ba5126b32a6119b543e16673e664">Plus de détails...</a><br /></td></tr>
+<tr class="separator:ac4a0ba5126b32a6119b543e16673e664"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7267e32663415ec61f2a95860818544e"><td class="memItemLeft" align="right" valign="top">String&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sonde_8h.html#a7267e32663415ec61f2a95860818544e">getDonneesSonde</a> ()</td></tr>
+<tr class="memdesc:a7267e32663415ec61f2a95860818544e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retourne les données de la Sonde suivant le protocole.  <a href="sonde_8h.html#a7267e32663415ec61f2a95860818544e">Plus de détails...</a><br /></td></tr>
+<tr class="separator:a7267e32663415ec61f2a95860818544e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a992105de8dfff8587468041e8a1408e3"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sonde_8h.html#a992105de8dfff8587468041e8a1408e3">getHumidite</a> ()</td></tr>
+<tr class="memdesc:a992105de8dfff8587468041e8a1408e3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retourne l'humidité  <a href="sonde_8h.html#a992105de8dfff8587468041e8a1408e3">Plus de détails...</a><br /></td></tr>
+<tr class="separator:a992105de8dfff8587468041e8a1408e3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adabc7d51584672595d61dc50bf4fe5cc"><td class="memItemLeft" align="right" valign="top">String&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sonde_8h.html#adabc7d51584672595d61dc50bf4fe5cc">getHumiditeToString</a> ()</td></tr>
+<tr class="memdesc:adabc7d51584672595d61dc50bf4fe5cc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retourne l'humidité  <a href="sonde_8h.html#adabc7d51584672595d61dc50bf4fe5cc">Plus de détails...</a><br /></td></tr>
+<tr class="separator:adabc7d51584672595d61dc50bf4fe5cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a07001dc3d45eb84adf38d2d9c768550b"><td class="memItemLeft" align="right" valign="top">unsigned long&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sonde_8h.html#a07001dc3d45eb84adf38d2d9c768550b">getPeriode</a> ()</td></tr>
+<tr class="memdesc:a07001dc3d45eb84adf38d2d9c768550b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retourne la période d'acquisition.  <a href="sonde_8h.html#a07001dc3d45eb84adf38d2d9c768550b">Plus de détails...</a><br /></td></tr>
+<tr class="separator:a07001dc3d45eb84adf38d2d9c768550b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7bc8fec1dc1e024c1270c3c798f12ea4"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sonde_8h.html#a7bc8fec1dc1e024c1270c3c798f12ea4">getTemperature</a> ()</td></tr>
+<tr class="memdesc:a7bc8fec1dc1e024c1270c3c798f12ea4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retourne la température.  <a href="sonde_8h.html#a7bc8fec1dc1e024c1270c3c798f12ea4">Plus de détails...</a><br /></td></tr>
+<tr class="separator:a7bc8fec1dc1e024c1270c3c798f12ea4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1e489a9937fcca252443e821cf30dd02"><td class="memItemLeft" align="right" valign="top">String&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sonde_8h.html#a1e489a9937fcca252443e821cf30dd02">getTemperatureToString</a> ()</td></tr>
+<tr class="memdesc:a1e489a9937fcca252443e821cf30dd02"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retourne la température.  <a href="sonde_8h.html#a1e489a9937fcca252443e821cf30dd02">Plus de détails...</a><br /></td></tr>
+<tr class="separator:a1e489a9937fcca252443e821cf30dd02"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aedd6c6c18cd1c1386e261aa8b8f0b40e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sonde_8h.html#aedd6c6c18cd1c1386e261aa8b8f0b40e">initialiserCapteurs</a> ()</td></tr>
+<tr class="memdesc:aedd6c6c18cd1c1386e261aa8b8f0b40e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialise les capteurs.  <a href="sonde_8h.html#aedd6c6c18cd1c1386e261aa8b8f0b40e">Plus de détails...</a><br /></td></tr>
+<tr class="separator:aedd6c6c18cd1c1386e261aa8b8f0b40e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aec9d8ade54a603f7f6f259ba3789c014"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sonde_8h.html#aec9d8ade54a603f7f6f259ba3789c014">modifierPeriode</a> (unsigned long _periode)</td></tr>
+<tr class="memdesc:aec9d8ade54a603f7f6f259ba3789c014"><td class="mdescLeft">&#160;</td><td class="mdescRight">Fixe une nouvelle période d'acquisition.  <a href="sonde_8h.html#aec9d8ade54a603f7f6f259ba3789c014">Plus de détails...</a><br /></td></tr>
+<tr class="separator:aec9d8ade54a603f7f6f259ba3789c014"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
+Variables</h2></td></tr>
+<tr class="memitem:a36deb824329db8b719c4f8f2ca8e83cc"><td class="memItemLeft" align="right" valign="top">DHT&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sonde_8h.html#a36deb824329db8b719c4f8f2ca8e83cc">dht</a></td></tr>
+<tr class="memdesc:a36deb824329db8b719c4f8f2ca8e83cc"><td class="mdescLeft">&#160;</td><td class="mdescRight">capteur de température et d'humidité  <a href="sonde_8h.html#a36deb824329db8b719c4f8f2ca8e83cc">Plus de détails...</a><br /></td></tr>
+<tr class="separator:a36deb824329db8b719c4f8f2ca8e83cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aae95279da5d68bb5c5e4e90e1259e83b"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sonde_8h.html#aae95279da5d68bb5c5e4e90e1259e83b">humidite</a></td></tr>
+<tr class="memdesc:aae95279da5d68bb5c5e4e90e1259e83b"><td class="mdescLeft">&#160;</td><td class="mdescRight">valeur de l'humidité en %  <a href="sonde_8h.html#aae95279da5d68bb5c5e4e90e1259e83b">Plus de détails...</a><br /></td></tr>
+<tr class="separator:aae95279da5d68bb5c5e4e90e1259e83b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4c9a70b2fe4d5c553790694a12b5a472"><td class="memItemLeft" align="right" valign="top">unsigned long&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sonde_8h.html#a4c9a70b2fe4d5c553790694a12b5a472">periode</a></td></tr>
+<tr class="memdesc:a4c9a70b2fe4d5c553790694a12b5a472"><td class="mdescLeft">&#160;</td><td class="mdescRight">période d'acquisition des valeurs en millisecondes  <a href="sonde_8h.html#a4c9a70b2fe4d5c553790694a12b5a472">Plus de détails...</a><br /></td></tr>
+<tr class="separator:a4c9a70b2fe4d5c553790694a12b5a472"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afc1d28cfbce795d6ea954ebe725241f5"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sonde_8h.html#afc1d28cfbce795d6ea954ebe725241f5">temperature</a></td></tr>
+<tr class="memdesc:afc1d28cfbce795d6ea954ebe725241f5"><td class="mdescLeft">&#160;</td><td class="mdescRight">valeur de la température en degré Celcius  <a href="sonde_8h.html#afc1d28cfbce795d6ea954ebe725241f5">Plus de détails...</a><br /></td></tr>
+<tr class="separator:afc1d28cfbce795d6ea954ebe725241f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a39457a538d21c887fcfdcd8144d69b5b"><td class="memItemLeft" align="right" valign="top">unsigned long&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sonde_8h.html#a39457a538d21c887fcfdcd8144d69b5b">tempsPrecedent</a></td></tr>
+<tr class="memdesc:a39457a538d21c887fcfdcd8144d69b5b"><td class="mdescLeft">&#160;</td><td class="mdescRight">temps de la dernère acquisition en millisecondes  <a href="sonde_8h.html#a39457a538d21c887fcfdcd8144d69b5b">Plus de détails...</a><br /></td></tr>
+<tr class="separator:a39457a538d21c887fcfdcd8144d69b5b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Description détaillée</h2>
+<div class="textblock"><p>Déclaration des fonctions pour gérer le module Sonde. </p>
+<dl class="section author"><dt>Auteur</dt><dd>Thierry Vaira </dd></dl>
+<dl class="section version"><dt>Version</dt><dd>0.1 </dd></dl>
+
+<p class="definition">Définition dans le fichier <a class="el" href="sonde_8h_source.html">sonde.h</a>.</p>
+</div><h2 class="groupheader">Documentation des macros</h2>
+<a id="a84ca18255a5457a3c9302d71855ea13c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a84ca18255a5457a3c9302d71855ea13c">&#9670;&nbsp;</a></span>DEBUG_SONDE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define DEBUG_SONDE</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Définition à la ligne <a class="el" href="sonde_8h_source.html#l00016">16</a> du fichier <a class="el" href="sonde_8h_source.html">sonde.h</a>.</p>
+
+</div>
+</div>
+<a id="aa45df0c3ce34e44817bb334702138b3c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa45df0c3ce34e44817bb334702138b3c">&#9670;&nbsp;</a></span>PERIODE_ACQUISITION_DEFAUT</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define PERIODE_ACQUISITION_DEFAUT&#160;&#160;&#160;500</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>période d'acquisition par défaut en millisecondes </p>
+
+<p class="definition">Définition à la ligne <a class="el" href="sonde_8h_source.html#l00018">18</a> du fichier <a class="el" href="sonde_8h_source.html">sonde.h</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Documentation des fonctions</h2>
+<a id="ab883c1cb86c46e248e5c3c5452015547"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab883c1cb86c46e248e5c3c5452015547">&#9670;&nbsp;</a></span>acquerir()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool acquerir </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Réalise l'acquisition des mesures de la Sonde à l'échéance de la période. </p>
+<dl class="section return"><dt>Renvoie</dt><dd>bool true si l'acquisition a été réalisée sino false </dd></dl>
+
+<p class="definition">Définition à la ligne <a class="el" href="sonde_8cpp_source.html#l00089">89</a> du fichier <a class="el" href="sonde_8cpp_source.html">sonde.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;{</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;  <span class="keywordflow">if</span>(<a class="code" href="sonde_8cpp.html#ac4a0ba5126b32a6119b543e16673e664">estEcheance</a>(<a class="code" href="sonde_8cpp.html#a4c9a70b2fe4d5c553790694a12b5a472">periode</a>))</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;  {</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;    <a class="code" href="sonde_8cpp.html#aae95279da5d68bb5c5e4e90e1259e83b">humidite</a> = <a class="code" href="sonde_8cpp.html#a160a8725f72977b73e1a6edc50d10ecb">dht</a>.readHumidity(<span class="keyword">false</span>);</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;    <a class="code" href="sonde_8cpp.html#afc1d28cfbce795d6ea954ebe725241f5">temperature</a> = <a class="code" href="sonde_8cpp.html#a160a8725f72977b73e1a6edc50d10ecb">dht</a>.readTemperature(<span class="keyword">false</span>);</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;<span class="preprocessor">    #ifdef DEBUG_SONDE</span></div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;    Serial.print(F(<span class="stringliteral">&quot;Temperature : &quot;</span>));</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;    Serial.print(<a class="code" href="sonde_8cpp.html#afc1d28cfbce795d6ea954ebe725241f5">temperature</a>);</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;    Serial.print(F(<span class="stringliteral">&quot; C&quot;</span>));</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;    Serial.print(F(<span class="stringliteral">&quot; - &quot;</span>));</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;    Serial.print(F(<span class="stringliteral">&quot;Humidité : &quot;</span>));</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;    Serial.print(<a class="code" href="sonde_8cpp.html#aae95279da5d68bb5c5e4e90e1259e83b">humidite</a>);</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;    Serial.println(F(<span class="stringliteral">&quot; %&quot;</span>));</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;<span class="preprocessor">    #endif</span></div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;  }</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;  <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;}</div>
+</div><!-- fragment -->
+<p class="reference">Références <a class="el" href="sonde_8cpp.html#a160a8725f72977b73e1a6edc50d10ecb">dht()</a>, <a class="el" href="sonde_8cpp_source.html#l00132">estEcheance()</a>, <a class="el" href="sonde_8cpp_source.html#l00013">humidite</a>, <a class="el" href="sonde_8cpp_source.html#l00015">periode</a>, et <a class="el" href="sonde_8cpp_source.html#l00014">temperature</a>.</p>
+
+<p class="reference">Référencé par <a class="el" href="main_8cpp_source.html#l00041">loop()</a>.</p>
+<div class="dynheader">
+Voici le graphe d'appel pour cette fonction :</div>
+<div class="dyncontent">
+<div class="center"><img src="sonde_8h_ab883c1cb86c46e248e5c3c5452015547_cgraph.png" border="0" usemap="#sonde_8h_ab883c1cb86c46e248e5c3c5452015547_cgraph" alt=""/></div>
+<map name="sonde_8h_ab883c1cb86c46e248e5c3c5452015547_cgraph" id="sonde_8h_ab883c1cb86c46e248e5c3c5452015547_cgraph">
+<area shape="rect" title="Réalise l&#39;acquisition des mesures de la Sonde à l&#39;échéance de la période." alt="" coords="5,31,73,57"/>
+<area shape="rect" href="sonde_8cpp.html#a160a8725f72977b73e1a6edc50d10ecb" title="capteur de température et d&#39;humidité" alt="" coords="151,5,191,32"/>
+<area shape="rect" href="sonde_8cpp.html#ac4a0ba5126b32a6119b543e16673e664" title="Retourne true si l&#39;échéance de la période fixée a été atteinte." alt="" coords="121,56,220,83"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="ac4a0ba5126b32a6119b543e16673e664"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac4a0ba5126b32a6119b543e16673e664">&#9670;&nbsp;</a></span>estEcheance()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool estEcheance </td>
+          <td>(</td>
+          <td class="paramtype">unsigned long&#160;</td>
+          <td class="paramname"><em>intervalle</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Retourne true si l'échéance de la période fixée a été atteinte. </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">intervalle</td><td>unsigned long </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Renvoie</dt><dd>bool true si l'intervalle entre deux périodes est arrivé à échéance </dd></dl>
+
+<p class="definition">Définition à la ligne <a class="el" href="sonde_8cpp_source.html#l00132">132</a> du fichier <a class="el" href="sonde_8cpp_source.html">sonde.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;{</div>
+<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;    <span class="keywordtype">unsigned</span> <span class="keywordtype">long</span> temps = millis();</div>
+<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;    <span class="keywordflow">if</span> (temps - <a class="code" href="sonde_8cpp.html#a39457a538d21c887fcfdcd8144d69b5b">tempsPrecedent</a> &gt;= intervalle)</div>
+<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;    {</div>
+<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;        <a class="code" href="sonde_8cpp.html#a39457a538d21c887fcfdcd8144d69b5b">tempsPrecedent</a> = temps;</div>
+<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;    }</div>
+<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;}</div>
+</div><!-- fragment -->
+<p class="reference">Références <a class="el" href="sonde_8cpp_source.html#l00016">tempsPrecedent</a>.</p>
+
+<p class="reference">Référencé par <a class="el" href="sonde_8cpp_source.html#l00089">acquerir()</a>.</p>
+
+</div>
+</div>
+<a id="a7267e32663415ec61f2a95860818544e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7267e32663415ec61f2a95860818544e">&#9670;&nbsp;</a></span>getDonneesSonde()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">String getDonneesSonde </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Retourne les données de la Sonde suivant le protocole. </p>
+<dl class="section return"><dt>Renvoie</dt><dd>String les données formatées pour le protocole </dd></dl>
+
+<p class="definition">Définition à la ligne <a class="el" href="sonde_8cpp_source.html#l00073">73</a> du fichier <a class="el" href="sonde_8cpp_source.html">sonde.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;{</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;  String donnees;</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;  <span class="comment">//$SONDE;TEMPERATURE;C;HUMIDITE;%;\r\n</span></div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;  donnees = <span class="stringliteral">&quot;$SONDE;&quot;</span> + String(<a class="code" href="sonde_8cpp.html#afc1d28cfbce795d6ea954ebe725241f5">temperature</a>, 1) + <span class="stringliteral">&quot;;&quot;</span> + <span class="stringliteral">&quot;C&quot;</span> + <span class="stringliteral">&quot;;&quot;</span> + String(<a class="code" href="sonde_8cpp.html#aae95279da5d68bb5c5e4e90e1259e83b">humidite</a>, 0) + <span class="stringliteral">&quot;;&quot;</span> + <span class="stringliteral">&quot;%&quot;</span> + <span class="stringliteral">&quot;\r\n&quot;</span>;</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;<span class="preprocessor">  #ifdef DEBUG_SONDE</span></div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;  Serial.print(F(<span class="stringliteral">&quot;Trame       : &quot;</span>));</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;  Serial.print(donnees);</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;<span class="preprocessor">  #endif</span></div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;  <span class="keywordflow">return</span> donnees;</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;}</div>
+</div><!-- fragment -->
+<p class="reference">Références <a class="el" href="sonde_8cpp_source.html#l00013">humidite</a>, et <a class="el" href="sonde_8cpp_source.html#l00014">temperature</a>.</p>
+
+<p class="reference">Référencé par <a class="el" href="main_8cpp_source.html#l00041">loop()</a>, et <a class="el" href="communication_8cpp_source.html#l00068">traiterTrame()</a>.</p>
+
+</div>
+</div>
+<a id="a992105de8dfff8587468041e8a1408e3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a992105de8dfff8587468041e8a1408e3">&#9670;&nbsp;</a></span>getHumidite()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint16_t getHumidite </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Retourne l'humidité </p>
+<dl class="section return"><dt>Renvoie</dt><dd>unsigned short l'humidité en % </dd></dl>
+
+<p class="definition">Définition à la ligne <a class="el" href="sonde_8cpp_source.html#l00042">42</a> du fichier <a class="el" href="sonde_8cpp_source.html">sonde.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;{</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;  <span class="keywordflow">return</span> (uint16_t)<a class="code" href="sonde_8cpp.html#aae95279da5d68bb5c5e4e90e1259e83b">humidite</a>;</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;}</div>
+</div><!-- fragment -->
+<p class="reference">Références <a class="el" href="sonde_8cpp_source.html#l00013">humidite</a>.</p>
+
+</div>
+</div>
+<a id="adabc7d51584672595d61dc50bf4fe5cc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adabc7d51584672595d61dc50bf4fe5cc">&#9670;&nbsp;</a></span>getHumiditeToString()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">String getHumiditeToString </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Retourne l'humidité </p>
+<dl class="section return"><dt>Renvoie</dt><dd>String l'humidité sous forme de chaîne de caratères </dd></dl>
+
+<p class="definition">Définition à la ligne <a class="el" href="sonde_8cpp_source.html#l00062">62</a> du fichier <a class="el" href="sonde_8cpp_source.html">sonde.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;{</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;  <span class="keywordtype">char</span> strMessageDisplay[8];</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;  sprintf(strMessageDisplay, <span class="stringliteral">&quot;%u %%&quot;</span>, (uint16_t)<a class="code" href="sonde_8cpp.html#aae95279da5d68bb5c5e4e90e1259e83b">humidite</a>);</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;  <span class="keywordflow">return</span> String(strMessageDisplay);</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;}</div>
+</div><!-- fragment -->
+<p class="reference">Références <a class="el" href="sonde_8cpp_source.html#l00013">humidite</a>.</p>
+
+</div>
+</div>
+<a id="a07001dc3d45eb84adf38d2d9c768550b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a07001dc3d45eb84adf38d2d9c768550b">&#9670;&nbsp;</a></span>getPeriode()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned long getPeriode </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Retourne la période d'acquisition. </p>
+<dl class="section return"><dt>Renvoie</dt><dd>unsigned long la période d'acquisition des mesures </dd></dl>
+
+<p class="definition">Définition à la ligne <a class="el" href="sonde_8cpp_source.html#l00122">122</a> du fichier <a class="el" href="sonde_8cpp_source.html">sonde.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;{</div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;  <span class="keywordflow">return</span> <a class="code" href="sonde_8cpp.html#a4c9a70b2fe4d5c553790694a12b5a472">periode</a>;</div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;}</div>
+</div><!-- fragment -->
+<p class="reference">Références <a class="el" href="sonde_8cpp_source.html#l00015">periode</a>.</p>
+
+</div>
+</div>
+<a id="a7bc8fec1dc1e024c1270c3c798f12ea4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7bc8fec1dc1e024c1270c3c798f12ea4">&#9670;&nbsp;</a></span>getTemperature()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float getTemperature </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Retourne la température. </p>
+<dl class="section return"><dt>Renvoie</dt><dd>float la température en °C </dd></dl>
+
+<p class="definition">Définition à la ligne <a class="el" href="sonde_8cpp_source.html#l00033">33</a> du fichier <a class="el" href="sonde_8cpp_source.html">sonde.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;{</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;  <span class="keywordflow">return</span> <a class="code" href="sonde_8cpp.html#afc1d28cfbce795d6ea954ebe725241f5">temperature</a>;</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;}</div>
+</div><!-- fragment -->
+<p class="reference">Références <a class="el" href="sonde_8cpp_source.html#l00014">temperature</a>.</p>
+
+</div>
+</div>
+<a id="a1e489a9937fcca252443e821cf30dd02"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1e489a9937fcca252443e821cf30dd02">&#9670;&nbsp;</a></span>getTemperatureToString()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">String getTemperatureToString </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Retourne la température. </p>
+<dl class="section return"><dt>Renvoie</dt><dd>String la température sous forme de chaîne de caratères </dd></dl>
+
+<p class="definition">Définition à la ligne <a class="el" href="sonde_8cpp_source.html#l00051">51</a> du fichier <a class="el" href="sonde_8cpp_source.html">sonde.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;{</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;  <span class="keywordtype">char</span> strMessageDisplay[8];</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;  sprintf(strMessageDisplay, <span class="stringliteral">&quot;%.1f °C&quot;</span>, <a class="code" href="sonde_8cpp.html#afc1d28cfbce795d6ea954ebe725241f5">temperature</a>);</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;  <span class="keywordflow">return</span> String(strMessageDisplay);</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;}</div>
+</div><!-- fragment -->
+<p class="reference">Références <a class="el" href="sonde_8cpp_source.html#l00014">temperature</a>.</p>
+
+</div>
+</div>
+<a id="aedd6c6c18cd1c1386e261aa8b8f0b40e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aedd6c6c18cd1c1386e261aa8b8f0b40e">&#9670;&nbsp;</a></span>initialiserCapteurs()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void initialiserCapteurs </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Initialise les capteurs. </p>
+
+<p class="definition">Définition à la ligne <a class="el" href="sonde_8cpp_source.html#l00021">21</a> du fichier <a class="el" href="sonde_8cpp_source.html">sonde.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;{</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="preprocessor">    #ifdef DEBUG_SONDE</span></div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    Serial.println(F(<span class="stringliteral">&quot;Initialisation capteur(s) sonde&quot;</span>));</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="preprocessor">    #endif</span></div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    <a class="code" href="sonde_8cpp.html#a160a8725f72977b73e1a6edc50d10ecb">dht</a>.begin();</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;}</div>
+</div><!-- fragment -->
+<p class="reference">Références <a class="el" href="sonde_8cpp.html#a160a8725f72977b73e1a6edc50d10ecb">dht()</a>.</p>
+
+<p class="reference">Référencé par <a class="el" href="main_8cpp_source.html#l00028">setup()</a>.</p>
+<div class="dynheader">
+Voici le graphe d'appel pour cette fonction :</div>
+<div class="dyncontent">
+<div class="center"><img src="sonde_8h_aedd6c6c18cd1c1386e261aa8b8f0b40e_cgraph.png" border="0" usemap="#sonde_8h_aedd6c6c18cd1c1386e261aa8b8f0b40e_cgraph" alt=""/></div>
+<map name="sonde_8h_aedd6c6c18cd1c1386e261aa8b8f0b40e_cgraph" id="sonde_8h_aedd6c6c18cd1c1386e261aa8b8f0b40e_cgraph">
+<area shape="rect" title="Initialise les capteurs." alt="" coords="5,5,132,32"/>
+<area shape="rect" href="sonde_8cpp.html#a160a8725f72977b73e1a6edc50d10ecb" title="capteur de température et d&#39;humidité" alt="" coords="180,5,220,32"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="aec9d8ade54a603f7f6f259ba3789c014"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aec9d8ade54a603f7f6f259ba3789c014">&#9670;&nbsp;</a></span>modifierPeriode()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void modifierPeriode </td>
+          <td>(</td>
+          <td class="paramtype">unsigned long&#160;</td>
+          <td class="paramname"><em>_periode</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Fixe une nouvelle période d'acquisition. </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">_periode</td><td>unsigned long nouvelle période d'acquisition des mesures </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Définition à la ligne <a class="el" href="sonde_8cpp_source.html#l00113">113</a> du fichier <a class="el" href="sonde_8cpp_source.html">sonde.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;{</div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;  <a class="code" href="sonde_8cpp.html#a4c9a70b2fe4d5c553790694a12b5a472">periode</a> = _periode;</div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;}</div>
+</div><!-- fragment -->
+<p class="reference">Références <a class="el" href="sonde_8cpp_source.html#l00015">periode</a>.</p>
+
+<p class="reference">Référencé par <a class="el" href="main_8cpp_source.html#l00041">loop()</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Documentation des variables</h2>
+<a id="a36deb824329db8b719c4f8f2ca8e83cc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a36deb824329db8b719c4f8f2ca8e83cc">&#9670;&nbsp;</a></span>dht</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">DHT dht</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>capteur de température et d'humidité </p>
+
+</div>
+</div>
+<a id="aae95279da5d68bb5c5e4e90e1259e83b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aae95279da5d68bb5c5e4e90e1259e83b">&#9670;&nbsp;</a></span>humidite</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float humidite</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>valeur de l'humidité en % </p>
+
+</div>
+</div>
+<a id="a4c9a70b2fe4d5c553790694a12b5a472"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4c9a70b2fe4d5c553790694a12b5a472">&#9670;&nbsp;</a></span>periode</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned long periode</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>période d'acquisition des valeurs en millisecondes </p>
+
+</div>
+</div>
+<a id="afc1d28cfbce795d6ea954ebe725241f5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afc1d28cfbce795d6ea954ebe725241f5">&#9670;&nbsp;</a></span>temperature</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float temperature</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>valeur de la température en degré Celcius </p>
+
+<p class="reference">Référencé par <a class="el" href="shield_8cpp_source.html#l00049">lireEntreesAnalogiques()</a>.</p>
+
+</div>
+</div>
+<a id="a39457a538d21c887fcfdcd8144d69b5b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a39457a538d21c887fcfdcd8144d69b5b">&#9670;&nbsp;</a></span>tempsPrecedent</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned long tempsPrecedent</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>temps de la dernère acquisition en millisecondes </p>
+
+</div>
+</div>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<div class="ttc" id="asonde_8cpp_html_a160a8725f72977b73e1a6edc50d10ecb"><div class="ttname"><a href="sonde_8cpp.html#a160a8725f72977b73e1a6edc50d10ecb">dht</a></div><div class="ttdeci">static DHT dht(D4, DHT11)</div><div class="ttdoc">capteur de température et d'humidité</div></div>
+<div class="ttc" id="asonde_8cpp_html_a4c9a70b2fe4d5c553790694a12b5a472"><div class="ttname"><a href="sonde_8cpp.html#a4c9a70b2fe4d5c553790694a12b5a472">periode</a></div><div class="ttdeci">static unsigned long periode</div><div class="ttdoc">période d'acquisition des valeurs en millisecondes</div><div class="ttdef"><b>Definition:</b> <a href="sonde_8cpp_source.html#l00015">sonde.cpp:15</a></div></div>
+<div class="ttc" id="asonde_8cpp_html_aae95279da5d68bb5c5e4e90e1259e83b"><div class="ttname"><a href="sonde_8cpp.html#aae95279da5d68bb5c5e4e90e1259e83b">humidite</a></div><div class="ttdeci">static float humidite</div><div class="ttdoc">valeur de l'humidité en %</div><div class="ttdef"><b>Definition:</b> <a href="sonde_8cpp_source.html#l00013">sonde.cpp:13</a></div></div>
+<div class="ttc" id="asonde_8cpp_html_ac4a0ba5126b32a6119b543e16673e664"><div class="ttname"><a href="sonde_8cpp.html#ac4a0ba5126b32a6119b543e16673e664">estEcheance</a></div><div class="ttdeci">bool estEcheance(unsigned long intervalle)</div><div class="ttdoc">Retourne true si l'échéance de la période fixée a été atteinte.</div><div class="ttdef"><b>Definition:</b> <a href="sonde_8cpp_source.html#l00132">sonde.cpp:132</a></div></div>
+<div class="ttc" id="asonde_8cpp_html_a39457a538d21c887fcfdcd8144d69b5b"><div class="ttname"><a href="sonde_8cpp.html#a39457a538d21c887fcfdcd8144d69b5b">tempsPrecedent</a></div><div class="ttdeci">static unsigned long tempsPrecedent</div><div class="ttdoc">temps de la dernère acquisition en millisecondes</div><div class="ttdef"><b>Definition:</b> <a href="sonde_8cpp_source.html#l00016">sonde.cpp:16</a></div></div>
+<div class="ttc" id="asonde_8cpp_html_afc1d28cfbce795d6ea954ebe725241f5"><div class="ttname"><a href="sonde_8cpp.html#afc1d28cfbce795d6ea954ebe725241f5">temperature</a></div><div class="ttdeci">static float temperature</div><div class="ttdoc">valeur de la température en degré Celcius</div><div class="ttdef"><b>Definition:</b> <a href="sonde_8cpp_source.html#l00014">sonde.cpp:14</a></div></div>
+<!-- HTML footer for doxygen 1.9.1-->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_97aefd0d527b934f1d99a682da8fe6a9.html">lib</a></li><li class="navelem"><a class="el" href="dir_6d6138d9f242848d35f59f976fa1ea59.html">sonde</a></li><li class="navelem"><a class="el" href="sonde_8h.html">sonde.h</a></li>
+    <li class="footer"><img class="footer" src="lasalle-logo.png" height="31" alt="La Salle Avignon"/>&nbsp;<b>Campus La Salle Avignon</b>&nbsp;-&nbsp;9 Rue Notre Dame des 7 douleurs&nbsp;-&nbsp;BP 50165&nbsp;-&nbsp;84008 Avignon&nbsp;-&nbsp;Généré le Lundi 22 Novembre 2021 16:57:12 pour Mini-projet 0 par&nbsp;<a href="https://www.doxygen.org/index.html">doxygen</a>&nbsp;1.8.17&nbsp;</li>
+  </ul>
+</div>
+</body>
+</html>
