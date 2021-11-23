@@ -19,8 +19,6 @@
 #define DELIMITEUR_FIN    '\n'  //!< le délimiteur de fin de trame
 #define FIN               0x00  //!< le fin de chaîne
 
-extern SoftwareSerial liaisonSerie;
-
 void initialiserLiaisonSerie();
 bool lireTrame(String &trame);
 void envoyerTrame(String trame);

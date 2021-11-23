@@ -17,12 +17,6 @@
 
 #define PERIODE_ACQUISITION_DEFAUT      500 //!< période d'acquisition par défaut en millisecondes
 
-extern DHT dht; //!< capteur de température et d'humidité
-extern float humidite; //!< valeur de l'humidité en %
-extern float temperature; //!< valeur de la température en degré Celcius
-extern unsigned long periode; //!< période d'acquisition des valeurs en millisecondes
-extern unsigned long tempsPrecedent; //!< temps de la dernère acquisition en millisecondes
-
 void initialiserCapteurs();
 float getTemperature();
 uint16_t getHumidite();
