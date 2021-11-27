@@ -10,8 +10,9 @@ Il est souvent nécessaire de passer par un "bac à sable".
 
 Pour le développement (IR), il existe de nombreux sites web qui fournissent des EDI (Environnement de Développement Intégré) en ligne pour tester du code ou des services : un espace d'apprentissage séparé. Ils permettent aussi d'échanger des exemples.
 
-Exemple :
+Exemples :
 
+- Wokwi (Simulateur en ligne Arduino et ESP32) : https://wokwi.com/
 - Arduino : https://codecast.france-ioi.org/v4/
 - Mbed : https://os.mbed.com/ et https://os.mbed.com/docs/mbed-os/v6.15/quick-start/build-with-the-online-compiler.html
 
