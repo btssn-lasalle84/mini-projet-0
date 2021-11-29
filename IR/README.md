@@ -367,6 +367,10 @@ La version `0.1` :
 
 ![](images/screenshot-0.1.png)
 
+Ajout de la météo :
+
+![](images/screenshot-meteo.png)
+
 ## Tests
 
 Le dossier `tests` fournit des ressources et contient des programmes d'exemples utiles pour la réalisation de la partie Web (HTML/CSS/JS/PHP/SQL) du mini-projet :

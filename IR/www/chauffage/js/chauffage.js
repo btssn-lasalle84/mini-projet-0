@@ -243,6 +243,23 @@ $(document).ready(function()
         });
     }
 
+    function afficherMeteo()
+    {
+        $.ajax({
+            type: "POST",
+            url: "meteo.php",
+            dataType : 'html',
+            success: function(data)
+            {
+                //console.log(data);
+                $('#meteo').html(data);
+            },
+            error: function() {
+                console.log("Erreur !");
+            }
+        });
+    }
+
     recupererDonnees();
     console.log("Période acquisition : " + $("#periode-acquisition").val());
     setInterval(recupererDonnees, $("#periode-acquisition").val());
@@ -250,6 +267,9 @@ $(document).ready(function()
     recupererBDD();
     console.log("Période bdd : " + $("#periode-bdd").val());
     setInterval(recupererBDD, $("#periode-bdd").val());
+
+    afficherMeteo();
+    setInterval(afficherMeteo, 10*60000); // 10 minutes
 
     $("#commande").click(function()
     {

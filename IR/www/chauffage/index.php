@@ -91,6 +91,10 @@ require_once ('./include/chauffage.inc.php');
             </div>
         </div>
         <div class="container my-1">
+            <div id="meteo" class="row justify-content-center"> <!-- around -->
+            </div>
+        </div>
+        <div class="container my-1">
             <div class="row justify-content-center"> <!-- around -->
                 <div class="col-12">
                     <div class="card bg-light">
