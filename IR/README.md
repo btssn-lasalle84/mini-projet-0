@@ -387,6 +387,7 @@ Le dossier `tests` fournit des ressources et contient des programmes d'exemples 
   - `php-portserie.php` : réalise un test de communication série avec un Arduino sous GNU/Linux
   - `php-sqlite.php` : met en oeuvre la base de données SQLite
   - `php-mysql.php` : met en oeuvre la base de données MySQL
+  - `php-meteo.php` : met en oeuvre l'utilisation d'une API Web et le traitement de données au format JSON
 
 ## Bac à sable et développement en ligne
 
@@ -408,7 +409,7 @@ Quelques sites :
 - Visual Studio Code Online : https://vscode.dev/
 - Gitpod : https://www.gitpod.io/
 - Codeanywhere (Cloud IDE) : https://codeanywhere.com/
-- Arduino : https://codecast.france-ioi.org/v4/
+- Wokwi (Simulateur en ligne Arduino et ESP32) : https://wokwi.com/
 
 Pour les tests en local côté client, il faut utiliser les **outils de développement** fournis par les navigateurs Chrome et Firefox.
 

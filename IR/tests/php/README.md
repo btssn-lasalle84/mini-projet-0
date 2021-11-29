@@ -11,6 +11,7 @@
     - [Port série et Fichiers](#port-série-et-fichiers)
     - [SQLite](#sqlite)
     - [MySQL](#mysql)
+    - [API Web et JSON](#api-web-et-json)
 
 ## Présentation
 
@@ -356,3 +357,50 @@ Voir aussi :
 
 - http://tvaira.free.fr/projets/activites/activite-base-donnees.html
 - http://tvaira.free.fr/projets/activites/activite-base-donnees-schema.html
+
+### API Web et JSON
+
+Openweather est une société informatique créée en 2014 par un groupe d’ingénieurs et d’experts en Big Data, en traitement de données et en traitement d’imagerie par satellite.
+
+Rechercher la météo sur Avignon : https://openweathermap.org/city/6455379
+
+Openweather fournit des API simples et rapides pour travailler avec leur base de données de données météorologiques, d’images satellite et d’autres données environnementales. Il existe 3 produits : API pour les données météorologiques, API pour l’imagerie par satellite et API pour l’apprentissage automatique (R & D).
+
+Lien : https://openweathermap.org/api
+
+Il faut créer un compte gratuit puis obtenir une clé API.
+
+Documentations :
+
+- Météo courante : https://openweathermap.org/current
+- Prévision sur 4 jours : https://openweathermap.org/api/hourly-forecast
+
+Exemples pour obtenir (avec sa clé API) les données météorologiques d’Avignon au format JSON :
+
+- http://api.openweathermap.org/data/2.5/forecast?id=6455379&APPID=xxxx
+- http://api.openweathermap.org/data/2.5/forecast?id=6455379&units=metric&lang=fr&APPID=xxxx
+
+Voir aussi : http://tvaira.free.fr/projets/activites/activite-json.html
+
+```php
+<?php
+// Affiche des informations météos (OpenWeather)
+setlocale(LC_ALL, 'fr_FR');
+
+echo "Météo OpenWeather openweathermap.org".PHP_EOL.PHP_EOL;
+
+$appid = "a2157cdc4a03c47c79e8414161c59762";
+$jsonfile = file_get_contents("http://api.openweathermap.org/data/2.5/weather?q=Avignon,FR&units=metric&lang=fr&appid=".$appid);
+$jsondata = json_decode($jsonfile);
+$currentTime = $jsondata->dt;
+
+echo "Date : ".date("H:i", $currentTime)."".PHP_EOL;
+$desc = ucwords($jsondata->weather[0]->description);
+echo "Description : ".$desc."".PHP_EOL;
+//$img = "http://openweathermap.org/img/w/".$jsondata->weather[0]->icon.".png";
+printf("Température : %.1f °C".PHP_EOL, $jsondata->main->temp);
+echo "Humidité : ".$jsondata->main->humidity." %".PHP_EOL;
+printf("Vent : %.1f km/h".PHP_EOL, ($jsondata->wind->speed*3.6));
+echo "Pression : ".$jsondata->main->pressure." hPa".PHP_EOL;
+?>
+```
