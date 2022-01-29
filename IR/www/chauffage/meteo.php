@@ -1,7 +1,8 @@
 <?php
 setlocale(LC_ALL, 'fr_FR');
 
-$jsonfile = file_get_contents("http://api.openweathermap.org/data/2.5/weather?q=Avignon,FR&units=metric&lang=fr&appid=a2157cdc4a03c47c79e8414161c59762");
+$APPID = "";
+$jsonfile = file_get_contents("http://api.openweathermap.org/data/2.5/weather?q=Avignon,FR&units=metric&lang=fr&appid=".$APPID);
 $jsondata = json_decode($jsonfile);
 $currentTime = $jsondata->dt;
 echo "<div class='col-lg-3'>";
@@ -18,7 +19,7 @@ echo "            </div>";
 echo "        </div>";
 echo "</div>";
 
-$jsonfile = file_get_contents("http://api.openweathermap.org/data/2.5/forecast?id=6455379&units=metric&lang=fr&appid=634746d10abe30ff9055d0693976af91");
+$jsonfile = file_get_contents("http://api.openweathermap.org/data/2.5/forecast?id=6455379&units=metric&lang=fr&appid=".$APPID);
 $jsondata = json_decode($jsonfile);
 $maintenant = time();
 $aujourdhui  = mktime(23, 0, 0, date("m")  , date("d"), date("Y"));
